@@ -1,0 +1,174 @@
+2023-09-07 21:04:48 [RSPPProject] error: uncaughtException: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+Error: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+2023-09-07 21:05:04 [RSPPProject] error: uncaughtException: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+Error: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+2023-09-07 21:05:13 [RSPPProject] error: uncaughtException: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+Error: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+2023-09-07 21:05:23 [RSPPProject] error: uncaughtException: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+Error: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+2023-09-07 21:05:27 [RSPPProject] error: uncaughtException: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+Error: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+2023-09-07 21:05:41 [RSPPProject] error: uncaughtException: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+Error: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+2023-09-07 21:05:58 [RSPPProject] error: uncaughtException: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+Error: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+2023-09-07 21:06:09 [RSPPProject] error: uncaughtException: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+Error: Cannot find module 'config'
+Require stack:
+- C:\Users\homehome\Desktop\projects\rsppproject\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+2023-09-07 21:39:56 [RSPPProject] error: uncaughtException: app.use() requires a middleware function
+TypeError: app.use() requires a middleware function
+    at Function.use (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\application.js:217:11)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:27:5)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+2023-09-07 21:45:24 [RSPPProject] error: uncaughtException: soDB is not defined
+ReferenceError: soDB is not defined
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\eSession.js:6:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:11:18)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+2023-09-07 21:45:52 [RSPPProject] error: uncaughtException: soDB is not defined
+ReferenceError: soDB is not defined
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\eSession.js:6:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:11:18)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+2023-09-07 21:46:02 [RSPPProject] error: uncaughtException: soDB is not defined
+ReferenceError: soDB is not defined
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\eSession.js:6:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:11:18)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)

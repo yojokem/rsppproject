@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\homehome\\Desktop\\projects\\rsppproject\\logs\\.5152a791ebf1a09f73cee6cc84826a61a79d4281-audit.json",
+    "files": [
+        {
+            "date": 1693723599073,
+            "name": "C:\\Users\\homehome\\Desktop\\projects\\rsppproject\\logs\\2023-09-03.exception.log",
+            "hash": "4ba71476d57565694cb94d8c0ddfecb2d4229945c246160bfbcb03bed1149fe8"
+        },
+        {
+            "date": 1694088287859,
+            "name": "C:\\Users\\homehome\\Desktop\\projects\\rsppproject\\logs\\2023-09-07.exception.log",
+            "hash": "8b3ed46f67e0fca49e4066b5c3b0ea638cb11570603e2691f4d9fc40748fe343"
+        }
+    ],
+    "hashType": "sha256"
+}

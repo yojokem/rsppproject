@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Esamanru Bold';
+    src: url("../fonts/esamanru Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Esamanru Light';
+    src: url("../fonts/esamanru Light.ttf");
+}
+
+@font-face {
+    font-family: 'Esamanru Medium';
+    src: url("../fonts/esamanru Medium.ttf");
+}
+
+@font-face {
+    font-family: 'GowunBatang Bold';
+    src: url("../fonts/GowunBatang-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'GowunBatang Regular';
+    src: url("../fonts/GowunBatang-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'HGSBatang Bold';
+    src: url("../fonts/HakgyoansimBareonbatangB.ttf");
+}
+
+@font-face {
+    font-family: 'HGSBatang Regular';
+    src: url("../fonts/HakgyoansimBareonbatangR.ttf");
+}
+
+@font-face {
+    font-family: 'HGSDotum Bold';
+    src: url("../fonts/HakgyoansimBareondotumB.ttf");
+}
+
+@font-face {
+    font-family: 'HGSDotum Regular';
+    src: url("../fonts/HakgyoansimBareondotumR.ttf");
+}
+
+@font-face {
+    font-family: 'HGSWooju Regular';
+    src: url("../fonts/HakgyoansimWoojuR.ttf");
+}
+
+@font-face {
+    font-family: 'NeoDunggeunmoPro Regular';
+    src: url("../fonts/NeoDunggeunmoPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'ONE Mobile';
+    src: url("../fonts/ONE Mobile Title.ttf");
+}
+
+@font-face {
+    font-family: 'BKKGothic Bold';
+    src: url("../fonts/부크크고딕_굵은글씨.ttf");
+}
+
+@font-face {
+    font-family: 'BKKGothic Regular';
+    src: url("../fonts/부크크고딕_얇은글씨.ttf");
+}
+
+@font-face {
+    font-family: 'BKKMyeongjo Bold';
+    src: url("../fonts/부크크명조_굵은글씨.ttf");
+}
+
+@font-face {
+    font-family: 'BKKMyeongjo Regular';
+    src: url("../fonts/부크크명조_얇은글씨.ttf");
+}
+
+@font-face {
+    font-family: 'Incheon Edu Grow';
+    src: url("../fonts/인천교육자람.ttf");
+}
+
+#pageTitle {
+    font-family: 'ONE Mobile';
+    font-size: 2.7em;
+}
