@@ -33,6 +33,8 @@ app.use(helmet.hidePoweredBy());
 app.use(helmet.noSniff());
 app.use(helmet.xssFilter());
 
+const models = require("./models/init-models");
+
 // [2] Router Handling
 
 app.get("/", function (req, res) {

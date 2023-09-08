@@ -21,6 +21,7 @@
     "jquery": "^3.7.1",
     "lodash.clonedeep": "^4.5.0",
     "mysql2": "^3.6.0",
+    "sequelize": "^6.33.0",
     "winston": "^3.10.0",
     "winston-daily-rotate-file": "^4.7.1"
   }
