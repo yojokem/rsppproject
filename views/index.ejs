@@ -5,24 +5,27 @@
         <%- include('./_head') %>
     </head>
     <body>
-        <%- include('./_navbar') %>
-        <div class="container-fluid">
-            <header><h2 id="pageTitle">RSPP: 양노환장 여행사무위원회</h2></header>
-            <article>
-                <div class="container-md">
-                    <section>
-                        <p style="font-family: 'HGSDotum Regular'">인직빵직 오늘은 날씨가 좋다.</p>
-                        <p>안녕? <%= validated %></p>
-                    </section>
-                </div>
-            </article>
-            <aside id="side" class="float-md-right">
-                <div class="alert alert-warning">
-                    <h5>ddd</h5>
-                </div>
-            </aside>
-            <footer></footer>
+        <div class="wrapper">
+            <%- include('./_navbar') %>
+            <div id="content" class="container-fluid">
+                <header><h2 id="pageTitle">RSPP: 양노환장 여행사무위원회</h2></header>
+                <article>
+                    <div class="container-md">
+                        <section>
+                            <p style="font-family: 'HGSDotum Regular'">인직빵직 오늘은 날씨가 좋다.</p>
+                            
+                        </section>
+                    </div>
+                    <div>&nbsp;</div>
+                </article>
+                <aside id="side">
+                    <div class="alert alert-warning">
+                        <h5>ddd</h5>
+                    </div>
+                </aside>
+            </div>
         </div>
+        <%- include('./.footer') %>
     </body>
     <%- include('./_bottom') %>
 </html>

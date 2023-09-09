@@ -100,3 +100,15 @@ aside * {
 .navbar * {
     font-family: 'BKKGothic Regular'
 }
+
+#footer_title {
+    font-family: 'Esamanru Light';
+}
+
+.badge {
+    font-family: 'NeoDunggeunmoPro Regular';
+}
+
+button {
+    font-family: 'HGSWooju Regular'
+}

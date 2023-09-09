@@ -25,7 +25,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     inreceipt: {
       type: DataTypes.DATE,
-      allowNull: false,
+      allowNull: true,
       defaultValue: Sequelize.Sequelize.literal('CURRENT_TIMESTAMP')
     },
     via: {

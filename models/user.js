@@ -28,7 +28,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(15),
       allowNull: false,
       defaultValue: "party",
-      comment: "party, genaff, agent, executor, chairman, auditor, abandoned, cancelled, expelled"
+      comment: "party, genaff, agent, executor, chairman, auditor, abandoned, expelled, cancelled"
     }
   }, {
     sequelize,

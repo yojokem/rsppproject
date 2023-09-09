@@ -43,6 +43,10 @@ app.get("/", function (req, res) {
     res.render("index");
 });
 
+app.get("/copyrights", function (req, res) {
+    res.render("copyrights");
+});
+
 const router_User = require("./routers/user");
 app.use(router_User);
 
