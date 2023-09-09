@@ -12,7 +12,9 @@ function initModels(sequelize) {
   var refundcol = _refundcol(sequelize, DataTypes);
   var user = _user(sequelize, DataTypes);
 
-  ordinarycol.belongsTo(collect, { foreignKey: 'passid' });
+  ordinarycol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
+  proxycol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
+  refundcol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
 
   user.hasMany(ordinarycol, {
     foreignKey: 'username',
@@ -57,17 +59,20 @@ function initModels(sequelize) {
     allowNull: false
   });
 
-
+  collect.sync();
+  ordinarycol.sync();
+  proxycol.sync();
+  refundcol.sync();
+  user.sync();
 
   return {
     collect,
     ordinarycol,
     proxycol,
     refundcol,
-    sessions,
     user,
   };
 }
+
+
 module.exports = initModels;
-module.exports.initModels = initModels;
-module.exports.default = initModels;

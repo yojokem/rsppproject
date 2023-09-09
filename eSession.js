@@ -1,9 +1,12 @@
+const logger = require("./config/winston")().logger;
 const session = require("express-session");
 const EMS = require("express-mysql-session")(session);
 
 const {soDB, sessionSign} = require("./config/config");
 
 let sessionStore = new EMS(soDB);
+
+logger.info("Session Store ready ✔");
 
 module.exports = session({
     name: "RSPPSessionProvider",
