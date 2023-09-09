@@ -39,16 +39,20 @@ app.use(helmet.xssFilter());
 
 // [2] Router Handling
 
-app.get("/", function (req, res) {
+app.get("/", (req, res) => {
     res.render("index");
 });
 
-app.get("/copyrights", function (req, res) {
+app.get("/informative", (req, res) => {
+    res.render("informative");
+});
+
+app.get("/copyrights", (req, res) => {
     res.render("copyrights");
 });
 
 const router_User = require("./routers/user");
-app.use(router_User);
+app.use("/user", router_User);
 
 // End of Initialization //
 

@@ -59,6 +59,24 @@ function initModels(sequelize) {
     allowNull: false
   });
 
+  ordinarycol.afterCreate(async (coll, options) => {
+    collect.create({
+      passid: coll.id
+    });
+  });
+
+  proxycol.afterCreate(async (coll, options) => {
+    collect.create({
+      passid: coll.id
+    });
+  });
+
+  refundcol.afterCreate(async (coll, options) => {
+    collect.create({
+      passid: coll.id
+    });
+  });
+
   collect.sync();
   ordinarycol.sync();
   proxycol.sync();

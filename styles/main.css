@@ -21,6 +21,10 @@ aside {
     min-height: 100%;
 }
 
+a.badge {
+    text-decoration: none;
+}
+
 /* Footer */
 footer {
     position: fixed;

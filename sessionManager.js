@@ -23,15 +23,13 @@ logger.info("Session Manager ready ✔");
 module.exports = function (seqMan) {
     return {
         userSessionCheck: async function (req, res, next) { // 로그인 세션 확인
-            res.locals.user = req.session.user != null ? req.session.user
+            if(!req.originalUrl.startsWith("/v")) {
+                res.locals.user = req.session.user != null ? req.session.user
                 : {username: "", password: ""}; //'user' is one's full credential
             
-            res.locals.validated = await validate(res.locals.user, seqMan);
+                res.locals.validated = await validate(res.locals.user, seqMan);
+            }
 
-            next();
-        },
-        session_clear: function (req, res, next) {
-            delete res.locals.user;
             next();
         },
         imports: function (req, res, next) { // res.locals에 넘겨줄 함수, 마지막에 호출된다.
