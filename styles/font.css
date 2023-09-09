@@ -109,6 +109,6 @@ aside * {
     font-family: 'NeoDunggeunmoPro Regular';
 }
 
-button {
+button, .btn, input {
     font-family: 'HGSWooju Regular'
 }

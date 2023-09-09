@@ -4,6 +4,7 @@
  */
 
 const logger = require("./config/winston")().logger;
+const path = require("path");
 const { Op } = require("sequelize");
 
 async function validate(user, seqMan) {
@@ -33,7 +34,9 @@ module.exports = function (seqMan) {
             next();
         },
         imports: function (req, res, next) { // res.locals에 넘겨줄 함수, 마지막에 호출된다.
-            
+            res.locals.$DIR_VIEW = path.join(__dirname, "./views/");
+            res.locals.viewDir = p => path.join(res.locals.$DIR_VIEW, p);
+
             next();
         }
     };

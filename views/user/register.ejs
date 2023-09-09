@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RSPP 회원</title>
+        <%- include(viewDir('./_head')) %>
+    </head>
+    <body>
+        <div class="wrapper">
+            <%- include(viewDir('./_navbar')) %>
+            <div id="content" class="container-fluid">
+                <header><h2 id="pageTitle">RSPP 회원 등록</h2></header>
+                <article>
+                    <div class="container-md">
+                        <section>
+                            <div id="form">
+                                <form name="registerForm" id="registerForm" action="/user/register" method="post">
+                                    <input type="hidden" name="_csrf", value="<%= _csrf %>" />
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="name0">😊</span>
+                                        <input type="text" name="name" class="form-control" placeholder="회원명" aria-label="회원명" aria-describedby="name0" />
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="username1">💾</span>
+                                        <input type="text" name="username" class="form-control" placeholder="아이디" aria-label="아이디" aria-describedby="username1" />
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="password1">🔐</span>
+                                        <input type="password" name="password" class="form-control" placeholder="비밀번호" aria-label="비밀번호" aria-describedby="password1" />
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="code0">💍</span>
+                                        <input type="password" name="code" class="form-control" placeholder="코드" aria-label="코드" aria-describedby="code0" />
+                                    </div>
+                                    <input class="btn btn-primary" type="submit" value="회원 등록 요청" />
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+                    <div>&nbsp;</div>
+                </article>
+                <aside id="side">
+                    <div class="alert alert-warning">
+                        <h5>ddd</h5>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <%- include(viewDir('./.footer')) %>
+    </body>
+    <%- include(viewDir('./_bottom')) %>
+</html>

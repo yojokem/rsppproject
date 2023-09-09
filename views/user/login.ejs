@@ -2,26 +2,26 @@
 <html>
     <head>
         <title>RSPP 회원</title>
-        <%- include('./_head') %>
+        <%- include(viewDir('./_head')) %>
     </head>
     <body>
         <div class="wrapper">
-            <%- include('./_navbar') %>
+            <%- include(viewDir('./_navbar')) %>
             <div id="content" class="container-fluid">
                 <header><h2 id="pageTitle">RSPP 회원 탐색</h2></header>
                 <article>
                     <div class="container-md">
                         <section>
                             <div id="form">
-                                <form name="loginForm" id="loginForm" action="./" method="post">
+                                <form name="loginForm" id="loginForm" action="/user" method="post">
                                     <input type="hidden" name="_csrf", value="<%= _csrf %>" />
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text" id="basic-addon1">@</span>
-                                        <input type="text" name="username" class="form-control" placeholder="아이디" aria-label="아이디" />
+                                        <span class="input-group-text" id="username0">💾</span>
+                                        <input type="text" name="username" class="form-control" placeholder="아이디" aria-label="아이디" aria-describedby="username0" />
                                     </div>
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text" id="basic-addon1">@</span>
-                                        <input type="password" name="password" class="form-control" placeholder="비밀번호" aria-label="비밀번호" />
+                                        <span class="input-group-text" id="password0">🔐</span>
+                                        <input type="password" name="password" class="form-control" placeholder="비밀번호" aria-label="비밀번호" aria-describedby="password0" />
                                     </div>
                                     <input class="btn btn-primary" type="submit" value="로그인" />
                                 </form>
@@ -37,7 +37,7 @@
                 </aside>
             </div>
         </div>
-        <%- include('./.footer') %>
+        <%- include(viewDir('./.footer')) %>
     </body>
-    <%- include('./_bottom') %>
+    <%- include(viewDir('./_bottom')) %>
 </html>
