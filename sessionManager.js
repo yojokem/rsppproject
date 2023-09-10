@@ -101,6 +101,12 @@ module.exports = function (seqMan) {
                         });
                     }
                 } else req.session.user0 = null;
+
+                if(logged == false) {
+                    logger.notice("False Login has occurred. [" + req.ip + "]");
+                } else {
+                    logger.info("Logged in. (" + username + ")");
+                }
             }
 
             next();

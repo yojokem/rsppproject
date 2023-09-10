@@ -1,3 +1,9 @@
+<% if(!validated) {%>
+    <script type="text/javascript">
+        alert("로그인 상태가 해제되어 있습니다. 로그인 페이지로 이동합니다.");
+        location.href = "/user";
+    </script>
+<% } %>
 <!DOCTYPE html>
 <html>
     <head>
