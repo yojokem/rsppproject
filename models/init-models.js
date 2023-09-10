@@ -1,5 +1,6 @@
 var DataTypes = require("sequelize").DataTypes;
 var _collect = require("./collect");
+var _login = require("./login");
 var _ordinarycol = require("./ordinarycol");
 var _proxycol = require("./proxycol");
 var _refundcol = require("./refundcol");
@@ -7,6 +8,7 @@ var _user = require("./user");
 
 function initModels(sequelize) {
   var collect = _collect(sequelize, DataTypes);
+  var login = _login(sequelize, DataTypes);
   var ordinarycol = _ordinarycol(sequelize, DataTypes);
   var proxycol = _proxycol(sequelize, DataTypes);
   var refundcol = _refundcol(sequelize, DataTypes);
@@ -15,6 +17,12 @@ function initModels(sequelize) {
   ordinarycol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
   proxycol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
   refundcol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
+
+  user.hasMany(login, {
+    foreignKey: 'id',
+    targetKey: 'user',
+    allowNull: false
+  })
 
   user.hasMany(ordinarycol, {
     foreignKey: 'username',
@@ -78,6 +86,7 @@ function initModels(sequelize) {
   });
 
   collect.sync();
+  login.sync();
   ordinarycol.sync();
   proxycol.sync();
   refundcol.sync();
@@ -85,6 +94,7 @@ function initModels(sequelize) {
 
   return {
     collect,
+    login,
     ordinarycol,
     proxycol,
     refundcol,

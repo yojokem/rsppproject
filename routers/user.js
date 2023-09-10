@@ -19,7 +19,11 @@ router.get("/register", csrfProtection, (req, res) => {
 
 /* Post Integration START */
 router.post("/", csrfProtection, (req, res) => {
+    req.session.user = req.session.user0;
+
     if(res.locals.validated) {}
+
+    res.redirect(req.query.url ? req.query.url : "/user");
 });
 
 router.post("/register", csrfProtection, (req, res) => {

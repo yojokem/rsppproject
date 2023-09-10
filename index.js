@@ -16,6 +16,7 @@ logger.info("module loaded and started initialization.");
 
 app.set('views', path.join(__dirname, "./views"));
 app.set('view engine', 'ejs');
+app.set('trust proxy', true);
 
 const seqMan = require("./sequelManager");
 const sessionManager = sessionManager0(seqMan);
@@ -26,6 +27,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser(cookieSign));
 app.use(eSession);
+app.use(sessionManager.userCheck);
 app.use(sessionManager.userSessionCheck);
 app.use(sessionManager.imports);
 app.use('/v/bootstrap', express.static(path.join(__dirname, "./node_modules/bootstrap/dist")));
