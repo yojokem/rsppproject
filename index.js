@@ -53,7 +53,7 @@ app.get("/copyrights", (req, res) => {
     res.render("copyrights");
 });
 
-const router_User = require("./routers/user");
+const router_User = require("./routers/user")(seqMan);
 app.use("/user", router_User);
 
 // End of Initialization //

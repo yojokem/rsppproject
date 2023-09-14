@@ -3,6 +3,47 @@
     <head>
         <title>RSPP 회원</title>
         <%- include(viewDir('./_head')) %>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/sha256.js"></script>
+        <script type="text/javascript">
+            function mysql_real_escape_string(str) {
+                if (typeof str != "string") return str;
+
+                return str.replace(/[\0\x08\x09\x1a\n\r"'\\\%]/g, function (char) {
+                    switch (char) {
+                        case "\0":
+                            return "\\0";
+                        case "\x08":
+                            return "\\b";
+                        case "\x09":
+                            return "\\t";
+                        case "\x1a":
+                            return "\\z";
+                        case "\n":
+                            return "\\n";
+                        case "\r":
+                            return "\\r";
+                        case '"':
+                        case "'":
+                        case "\\":
+                        case "%":
+                            return "\\" + char; // prepends a backslash to backslash, percent,
+                        // and double/single quotes
+                    }
+                });
+            }
+
+            $(document).ready(function() {
+                let k = new URL(document.URL).searchParams.get("url");
+                if(k) $("#registerForm").attr("action", "/user/register?url=" + mysql_real_escape_string(k));
+
+                $("#submitBtn").click(function() {
+                    $("#password3").val(CryptoJS.SHA256($("#password3").val()).toString());
+
+                    $("#registerForm").submit();
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="wrapper">
@@ -25,13 +66,20 @@
                                     </div>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="password1">🔐</span>
-                                        <input type="password" name="password" class="form-control" placeholder="비밀번호" aria-label="비밀번호" aria-describedby="password1" />
+                                        <input type="password" id="password3" name="password" class="form-control" placeholder="비밀번호" aria-label="비밀번호" aria-describedby="password1" />
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="password2">🔐</span>
+                                        <input type="password" id="password3" name="password3" class="form-control" placeholder="비밀번호 확인" aria-label="비밀번호 확인" aria-describedby="password2" />
+                                    </div>
+                                    <div>
+                                        <p style="font-size: calc(40%);">비밀번호에 띄어쓰기( ) 포함 시 비밀번호로 인정될 수도 있습니다.</p>
                                     </div>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="code0">💍</span>
-                                        <input type="password" name="code" class="form-control" placeholder="코드" aria-label="코드" aria-describedby="code0" />
+                                        <input type="number" name="code" class="form-control" placeholder="코드" aria-label="코드" aria-describedby="code0" />
                                     </div>
-                                    <input class="btn btn-primary" type="submit" value="회원 등록 요청" />
+                                    <input class="btn btn-primary" id="submitBtn" type="submit" value="회원 등록 요청" />
                                 </form>
                             </div>
                         </section>

@@ -6,6 +6,7 @@
 const logger = require("./config/winston")().logger;
 const path = require("path");
 const { Op } = require("sequelize");
+const { regFailCauses } = require("./config/config")
 
 async function validate(user, seqMan) {
     return (await seqMan.tables.user.findOne({
@@ -15,6 +16,15 @@ async function validate(user, seqMan) {
             position: {
                 [Op.ne]: 'abandoned'
             }
+        }
+    })) != null;
+}
+
+async function checkUsernameAvailable(username, seqMan) {
+    return (await seqMan.tables.user.findOne({
+        attributes: ['username'],
+        where: {
+            username: mysql_real_escape_string(username)
         }
     })) != null;
 }
@@ -64,48 +74,110 @@ module.exports = function (seqMan) {
             let p = Object.keys(req.body);
 
             if(p.includes("_csrf") && req.method.toLowerCase() == "post") {
-                let logged = false;
-                let username = typeof req.body.username == "string" ? mysql_real_escape_string(req.body.username) : "";
-                let password = typeof req.body.password == "string" ? mysql_real_escape_string(req.body.password) : "";
+                if(req.path == "/user") {
+                    let logged = false;
+                    let username = typeof req.body.username == "string" ? mysql_real_escape_string(req.body.username) : "";
+                    let password = typeof req.body.password == "string" ? mysql_real_escape_string(req.body.password) : "";
 
-                if(username != null && password != null) {
-                    if(req.body['_csrf'].length == 36) {
-                        let user = (await seqMan.tables.user.findOne({
-                            where: {
+                    if(username != "" && password != "") {
+                        let user;
+                        if(req.body['_csrf'].length == 36) {
+                            user = (await seqMan.tables.user.findOne({
+                                attributes: ['id', 'username', 'name'],
+                                where: {
+                                    username: username,
+                                    password: password,
+                                    position: {
+                                        [Op.ne]: 'abandoned'
+                                    }
+                                }
+                            }));
+        
+                            if(user != null) logged = user.id;
+                        }
+        
+                        if(logged == false || logged == null) {
+                            req.session.user0 = null;
+                        } else {
+                            let name = user.name;
+                            req.session.user0 = {
+                                id: logged,
                                 username: username,
                                 password: password,
-                                position: {
-                                    [Op.ne]: 'abandoned'
-                                }
+                                name: name
                             }
-                        })).id;
-    
-                        if(user != null) logged = user;
-                    }
-    
-                    if(logged == false) {
-                        req.session.user0 = null;
-                    } else {
-                        req.session.user0 = {
-                            id: logged,
-                            username: username,
-                            password: password
+
+                            delete req.body.username;
+                            delete req.body.password;
+
+                            seqMan.tables.login.create({
+                                user: logged,
+                                ipaddress: req.ip
+                            });
                         }
+                    } else req.session.user0 = null;
 
-                        delete req.body.username;
-                        delete req.body.password;
-
-                        seqMan.tables.login.create({
-                            user: logged,
-                            ipaddress: req.ip
-                        });
+                    if(logged == false) {
+                        logger.info("False Login has occurred. [" + req.ip + "]");
+                    } else {
+                        logger.info("Logged in. (" + username + ")");
                     }
-                } else req.session.user0 = null;
+                } else if(req.path == "/user/register") {
+                    let regged = false;
+                    let username = typeof req.body.username == "string" ? mysql_real_escape_string(req.body.username) : "";
 
-                if(logged == false) {
-                    logger.notice("False Login has occurred. [" + req.ip + "]");
-                } else {
-                    logger.info("Logged in. (" + username + ")");
+                    if(username == "") {
+                        res.locals.replace = regFailCauses[2];
+                        next();
+                        return;
+                    }
+                    if(await checkUsernameAvailable(username, seqMan)) {
+                        res.locals.replace = regFailCauses[1];
+                        next();
+                        return;
+                    }
+
+                    let password = typeof req.body.password == "string" ? mysql_real_escape_string(req.body.password) : "";
+                    let name =  typeof req.body.name == "string" ? mysql_real_escape_string(req.body.name) : "";
+                    let code =  typeof req.body.code == "string" ? mysql_real_escape_string(req.body.code) : "";
+
+                    if(password == "") {
+                        res.locals.replace = regFailCauses[3];
+                        next();
+                        return;
+                    }
+                    if(code == "") {
+                        res.locals.replace = regFailCauses[5]
+                        next();
+                        return;
+                    }
+                    if(name == "") {
+                        res.locals.replace = regFailCauses[4];
+                        next();
+                        return;
+                    }
+
+                    let rowID;
+                    if(req.body['_csrf'].length == 36) {
+                        let p = await seqMan.tables.user.create({
+                            username: username,
+                            password: password,
+                            name: name,
+                            code: code
+                        });
+
+                        rowID = p.id;
+
+                        regged = true;
+                    }
+
+                    if(regged == false) {
+                        logger.info("False Login has occurred. [" + req.ip + "]");
+                    } else {
+                        logger.info("Registered: (" + username + ` (${rowID}))`);
+                    }
+
+                    res.locals.regged = regged;
                 }
             }
 

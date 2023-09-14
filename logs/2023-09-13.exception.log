@@ -1,0 +1,24 @@
+2023-09-13 17:50:40 [RSPPProject] error: uncaughtException: Cannot read properties of null (reading 'id')
+TypeError: Cannot read properties of null (reading 'id')
+    at userCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:81:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-13 17:50:40 [RSPPProject] error: uncaughtException: Cannot read properties of null (reading 'id')
+TypeError: Cannot read properties of null (reading 'id')
+    at userCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:81:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-13 17:50:40 [RSPPProject] error: uncaughtException: Cannot read properties of null (reading 'id')
+TypeError: Cannot read properties of null (reading 'id')
+    at userCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:81:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-13 17:52:07 [RSPPProject] error: uncaughtException: logger.notice is not a function
+TypeError: logger.notice is not a function
+    at userCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:107:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-13 17:52:07 [RSPPProject] error: uncaughtException: logger.notice is not a function
+TypeError: logger.notice is not a function
+    at userCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:107:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-13 17:52:07 [RSPPProject] error: uncaughtException: logger.notice is not a function
+TypeError: logger.notice is not a function
+    at userCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:107:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

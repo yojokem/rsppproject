@@ -1,0 +1,36 @@
+2023-09-14 23:29:24 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at checkUsernameAvailable (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:24:26)
+    at userCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:134:30)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express-session\index.js:506:7
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express-mysql-session\index.js:435:38
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-14 23:29:24 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at checkUsernameAvailable (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:24:26)
+    at userCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:134:30)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express-session\index.js:506:7
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express-mysql-session\index.js:435:38
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-14 23:29:24 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at checkUsernameAvailable (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:24:26)
+    at userCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:134:30)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express-session\index.js:506:7
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express-mysql-session\index.js:435:38
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
