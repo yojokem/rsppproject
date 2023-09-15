@@ -38,6 +38,11 @@ module.exports = function(sequelize, DataTypes) {
     proxycall: {
       type: DataTypes.INTEGER,
       allowNull: true
+    },
+    pass: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      unique: "pass_UNIQUE"
     }
   }, {
     sequelize,
@@ -50,6 +55,14 @@ module.exports = function(sequelize, DataTypes) {
         using: "BTREE",
         fields: [
           { name: "id" },
+        ]
+      },
+      {
+        name: "pass_UNIQUE",
+        unique: true,
+        using: "BTREE",
+        fields: [
+          { name: "pass" },
         ]
       },
     ]

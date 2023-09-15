@@ -9,10 +9,10 @@ module.exports = function(sequelize, DataTypes) {
     },
     user: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: false
     },
     ipaddress: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(255),
       allowNull: false
     },
     time: {
@@ -32,7 +32,7 @@ module.exports = function(sequelize, DataTypes) {
         fields: [
           { name: "id" },
         ]
-      }
+      },
     ]
   });
 };

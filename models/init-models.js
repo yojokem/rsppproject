@@ -8,7 +8,7 @@ var _user = require("./user");
 
 function initModels(sequelize) {
   var collect = _collect(sequelize, DataTypes);
-  var login = _login(sequelize, DataTypes);
+  var login = _login(sequelize, DataTypes);   
   var ordinarycol = _ordinarycol(sequelize, DataTypes);
   var proxycol = _proxycol(sequelize, DataTypes);
   var refundcol = _refundcol(sequelize, DataTypes);
@@ -18,11 +18,9 @@ function initModels(sequelize) {
   proxycol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
   refundcol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
 
-  user.hasMany(login, {
-    foreignKey: 'id',
-    targetKey: 'user',
-    allowNull: false
-  })
+  collect.hasMany(ordinarycol, { foreignKey: 'pass', targetKey: 'passid' });
+  collect.hasMany(proxycol, { foreignKey: 'pass', targetKey: 'passid' });
+  collect.hasMany(refundcol, { foreignKey: 'pass', targetKey: 'passid' });
 
   user.hasMany(ordinarycol, {
     foreignKey: 'username',

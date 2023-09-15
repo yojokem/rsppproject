@@ -33,10 +33,6 @@ module.exports = function (seqMan) {
             res.render("user/index");
         } else csrfRenderer(res, "user/register", req.csrfToken());
     });
-    
-    //
-    
-    /* Post Integration START */
     router.post("/", csrfProtection, (req, res) => {
         req.session.user = req.session.user0;
     
@@ -61,14 +57,6 @@ module.exports = function (seqMan) {
                 else alertRedirect(res, regFailCauses[6], "/user/register");
             }
         }
-    });
-    /* Post Integration END */
-    
-    //
-    
-    router.get("/logout", (req, res) => {
-        delete req.session.user;
-        res.redirect("../");
     });
 
     return router;

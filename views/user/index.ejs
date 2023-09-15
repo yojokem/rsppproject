@@ -20,7 +20,12 @@
                         <section>
                             <div id="name"></div>
                             <hr>
-                            <div id="username"></div>
+                            <div id="username">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="username0">🔐</span>
+                                    <input type="text" id="username" name="username" readonly class="form-control" placeholder="기존 비밀번호" aria-label="기존 비밀번호" aria-describedby="username0" />
+                                </div>
+                            </div>
                             <div id="password">
                                 <form name="passwordAlterForm" id="passwordAlterForm" action="/user/password/<%= user.id %>" method="POST">
                                     <div class="input-group mb-3">
