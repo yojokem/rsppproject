@@ -47,3 +47,15 @@ footer {
     padding-right: 1%;
     padding-bottom: 0.1%;
 }
+
+/**/
+
+#passwordAlterForm {
+    padding: 0.8em;
+    border: 1px solid #000000;
+}
+
+#codeCheckForm {
+    padding: 0.8em;
+    border: 1px solid #000000;
+}

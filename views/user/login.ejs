@@ -37,7 +37,20 @@
                 let k = new URL(document.URL).searchParams.get("url");
                 if(k) $("#loginForm").attr("action", "/user?url=" + mysql_real_escape_string(k));
 
+                function enterRespond(e) {
+                    if(e.which == 13) {
+                        $("#submitBtn").click();
+                    }
+                }
+
+                $("#username").keyup(enterRespond);
+                $("#password3").keyup(enterRespond);
+
                 $("#submitBtn").click(function() {
+                    if($("#password3").val().trim() == "") {
+                        alert("비밀번호가 빈칸일 수는 없습니다.");
+                        return;
+                    }
                     $("#password3").val(CryptoJS.SHA256($("#password3").val()).toString());
 
                     $("#loginForm").submit();
@@ -57,11 +70,11 @@
                                 <form name="loginForm" id="loginForm" action="/user" method="post">
                                     <input type="hidden" name="_csrf", value="<%= _csrf %>" />
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text" id="username0">💾</span>
-                                        <input type="text" name="username" class="form-control" placeholder="아이디" aria-label="아이디" aria-describedby="username0" />
+                                        <span class="input-group-text" id="username0"><%= stylingEmojis.USERNAME %></span>
+                                        <input type="text" id="username" name="username" class="form-control" placeholder="아이디" aria-label="아이디" aria-describedby="username0" />
                                     </div>
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text" id="password0">🔐</span>
+                                        <span class="input-group-text" id="password0"><%= stylingEmojis.PASSWORD %></span>
                                         <input type="password" id="password3" name="password" class="form-control" placeholder="비밀번호" aria-label="비밀번호" aria-describedby="password0" />
                                     </div>
                                     <input class="btn btn-primary" id="submitBtn" type="button" value="로그인" />

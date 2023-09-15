@@ -6,7 +6,7 @@ const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 
 const app = express();
-const {PORT, cookieSign} = require("./config/config");
+const {PORT, cookieSign, stylingEmojis} = require("./config/config");
 const eSession = require("./eSession");
 const sessionManager0 = require("./sessionManager");
 
@@ -30,6 +30,7 @@ app.use(eSession);
 app.use(sessionManager.userCheck);
 app.use(sessionManager.userSessionCheck);
 app.use(sessionManager.imports);
+app.use((req, res, next) => {res.locals.stylingEmojis = stylingEmojis; next();});
 app.use('/v/bootstrap', express.static(path.join(__dirname, "./node_modules/bootstrap/dist")));
 app.use('/v/jquery', express.static(path.join(__dirname, "./node_modules/jquery/dist")));
 app.use('/v/style', express.static(path.join(__dirname, "./styles")));
@@ -55,6 +56,9 @@ app.get("/copyrights", (req, res) => {
 
 const router_User = require("./routers/user")(seqMan);
 app.use("/user", router_User);
+
+const router_Collect = require("./routers/collect")(seqMan);
+app.use("/collect", router_Collect);
 
 // End of Initialization //
 

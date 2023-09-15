@@ -9,6 +9,51 @@
     <head>
         <title>RSPP 회원</title>
         <%- include(viewDir('./_head')) %>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/sha256.js"></script>
+        <script type="text/javascript">
+            function mysql_real_escape_string(str) {
+                if (typeof str != "string") return str;
+
+                return str.replace(/[\0\x08\x09\x1a\n\r"'\\\%]/g, function (char) {
+                    switch (char) {
+                        case "\0":
+                            return "\\0";
+                        case "\x08":
+                            return "\\b";
+                        case "\x09":
+                            return "\\t";
+                        case "\x1a":
+                            return "\\z";
+                        case "\n":
+                            return "\\n";
+                        case "\r":
+                            return "\\r";
+                        case '"':
+                        case "'":
+                        case "\\":
+                        case "%":
+                            return "\\" + char; // prepends a backslash to backslash, percent,
+                        // and double/single quotes
+                    }
+                });
+            }
+
+            $(document).ready(function() {
+                $("#submitBtn").click(function() {
+                    if($("#password_cur").val().trim() == "" || $("#password_alt").val().trim() == "" || $("#password_alt_re").val().trim() == "") {
+                        alert("빈칸이 있습니다. 다시 시도하세요.");
+                    } else {
+                        $("#password_cur").val(CryptoJS.SHA256($("#password_cur").val()).toString());
+                        $("#password_alt").val(CryptoJS.SHA256($("#password_alt").val()).toString());
+                        $("#password_alt_re").val(CryptoJS.SHA256($("#password_alt_re").val()).toString());
+
+                        if($("#password_alt").val() == $("#password_alt_re").val()) $("#passwordAlterForm").submit();
+                        else alert("신규 비밀번호와 재입력하신 것이 일치하지 않습니다.");
+                    }
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="wrapper">
@@ -18,27 +63,43 @@
                 <article>
                     <div class="container-md">
                         <section>
-                            <div id="name"></div>
+                            <div id="name" class="row">
+                                <div class="col-sm-8"><span style="font-family: 'BKKGothic Bold'; font-size: 1.4em;"><%= user.name %></span> 님</div>
+                                <div class="col-sm-3"><input type="button" class="btn btn-sm btn-secondary" onclick="location.href = '/user/logout'" value="로그아웃" /></div>
+                            </div>
                             <hr>
                             <div id="username">
                                 <div class="input-group mb-3">
-                                    <span class="input-group-text" id="username0">🔐</span>
-                                    <input type="text" id="username" name="username" readonly class="form-control" placeholder="기존 비밀번호" aria-label="기존 비밀번호" aria-describedby="username0" />
+                                    <span class="input-group-text" id="username0">아이디</span>
+                                    <input type="text" id="username" name="username" readonly class="form-control" placeholder="아이디" aria-label="아이디" value="<%= user.username %>" aria-describedby="username0" />
                                 </div>
                             </div>
                             <div id="password">
                                 <form name="passwordAlterForm" id="passwordAlterForm" action="/user/password/<%= user.id %>" method="POST">
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text" id="password0">🔐</span>
-                                        <input type="password" id="password3" name="password" class="form-control" placeholder="기존 비밀번호" aria-label="기존 비밀번호" aria-describedby="password0" />
+                                        <span class="input-group-text" id="password0"><%= stylingEmojis.PASSWORD %></span>
+                                        <input type="password" id="password_cur" name="password" class="form-control" placeholder="기존 비밀번호" aria-label="기존 비밀번호" aria-describedby="password0" />
                                     </div>
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text" id="password1">🔐</span>
-                                        <input type="password" id="password3" name="password" class="form-control" placeholder="신규 비밀번호" aria-label="신규 비밀번호" aria-describedby="password1" />
+                                        <span class="input-group-text" id="password2"><%= stylingEmojis.PASSWORD %></span>
+                                        <input type="password" id="password_alt" name="password_alt" class="form-control" placeholder="신규 비밀번호" aria-label="신규 비밀번호" aria-describedby="password2" />
                                     </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="password3"><%= stylingEmojis.PASSWORD %></span>
+                                        <input type="password" id="password_alt_re" name="password_alt_re" class="form-control" placeholder="신규 비밀번호 재입력" aria-label="신규 비밀번호 재입력" aria-describedby="password3" />
+                                    </div>
+                                    <input class="btn btn-info" id="submitBtn" type="button" value="비밀번호 변경" />
                                 </form>
                             </div>
-                            <div id="code"></div>
+                            <div id="code">
+                                <form name="codeCheckForm" id="codeCheckForm" action="/user/codeCheck/<%= user.id %>" method="POST">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="code0"><%= stylingEmojis.CODE %></span>
+                                        <input type="number" id="code" name="code" class="form-control" placeholder="복구 코드" aria-label="복구 코드" aria-describedby="code0" />
+                                    </div>
+                                    <input class="btn btn-info" id="submitBtn" type="button" value="코드 변경" />
+                                </form>
+                            </div>
                             <div id="position"></div>
                         </section>
                     </div>

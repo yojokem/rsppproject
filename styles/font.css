@@ -97,7 +97,7 @@ aside * {
     padding-top: 5px;
 }
 
-.navbar * {
+.navbar *, .input-group-text {
     font-family: 'BKKGothic Regular'
 }
 

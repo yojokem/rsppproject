@@ -34,7 +34,14 @@ const regFailCauses = {
     5: "복구 코드를 입력하지 않으셨습니다. 다시 시도하세요.",
     /** Not typed : infringed error */
     6: "registration failed due to unknown cause(s). infringed."
-}
+};
+
+const stylingEmojis = {
+    NAME: "😊",
+    USERNAME: "💾",
+    PASSWORD: "🔐",
+    CODE: "💍"
+};
 
 function mysql_real_escape_string(str) {
     if (typeof str != "string") return str;
@@ -85,5 +92,6 @@ module.exports = {
         </script>
         `)
     },
-    regFailCauses: regFailCauses
+    regFailCauses: regFailCauses,
+    stylingEmojis: stylingEmojis
 }
