@@ -33,7 +33,11 @@ const regFailCauses = {
     /** Not typed : code */
     5: "복구 코드를 입력하지 않으셨습니다. 다시 시도하세요.",
     /** Not typed : infringed error */
-    6: "registration failed due to unknown cause(s). infringed."
+    6: "registration failed due to unknown cause(s). infringed.",
+    /** Password and Password Confirm NOT Match */
+    7: "입력하신 비밀번호와 확인용 재입력 비밀번호가 같지 않습니다.",
+    /** Not typed : password confirm */
+    8: "확인용 재입력 비밀번호를 입력하지 않으셨습니다. 다시 시도하세요.",
 };
 
 const stylingEmojis = {
@@ -70,6 +74,24 @@ function mysql_real_escape_string(str) {
     });
 }
 
+function typeCheck(criteria, name, variable) {
+    return criteria[name] == typeof variable;
+}
+
+function typeList(sample) {
+    let k = Object.keys(sample);
+
+    if(typeof sample != "object" || k.length == 0) return null;
+
+    let criteria = {};
+
+    for(var i in k) {
+        criteria[k[i]] = typeof sample[k];
+    }
+
+    return criteria;
+}
+
 module.exports = {
     PORT: process.env.PORT || 8080,
     cookieSign: cS,
@@ -93,5 +115,9 @@ module.exports = {
         `)
     },
     regFailCauses: regFailCauses,
-    stylingEmojis: stylingEmojis
+    stylingEmojis: stylingEmojis,
+    type: {
+        typeCheck: typeCheck,
+        typeList: typeList
+    }
 }

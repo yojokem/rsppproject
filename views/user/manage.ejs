@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RSPP 회원</title>
+        <title>RSPP 회원 관리</title>
         <%- include(viewDir('./_head')) %>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/core.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/sha256.js"></script>
@@ -92,7 +92,7 @@
                                 </form>
                             </div>
                             <div id="code">
-                                <form name="codeCheckForm" id="codeCheckForm">
+                                <form name="codeCheckForm" id="codeCheckForm" action="/user/codeCheck/<%= user.id %>" method="POST">
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="code0"><%= stylingEmojis.CODE %></span>
                                         <input type="number" id="code" name="code" class="form-control" placeholder="복구 코드" aria-label="복구 코드" aria-describedby="code0" />
@@ -100,15 +100,7 @@
                                     <input class="btn btn-info" id="submitBtn" type="button" value="코드 변경" />
                                 </form>
                             </div>
-                            <div id="position">
-                                <form name="positionRequestForm" id="positionRequestForm">
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" id="position0"><%= stylingEmojis.CODE %></span>
-                                        <input type="text" id="code" name="code" class="form-control" placeholder="복구 코드" aria-label="복구 코드" aria-describedby="position0" />
-                                    </div>
-                                    <input class="btn btn-info" id="submitBtn" type="button" value="코드 변경" />
-                                </form>
-                            </div>
+                            <div id="position"></div>
                         </section>
                     </div>
                     <div>&nbsp;</div>

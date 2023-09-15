@@ -3,23 +3,6 @@ const router = express.Router();
 const csrfProtection = require("csurf")();
 const {mysql_real_escape_string, regFailCauses, csrfRenderer, alertRedirect} = require("../config/config");
 
-const positions = ['party', 'genaff', 'agent', 'executor', 'chairman', 'auditor', 'abandoned', 'expelled', 'cancelled', 'none'];
-
-/**
- * <b>Functions list</b>
- * r -> Position Raw
- * u -> User Object
- */
-const positionChecklist = {
-    /** Deprecated. Use 'beenThere' instead. */
-    isThere: r => positions.includes(r),
-    beenThere: u => {
-        let v = isThere(u.position);
-        if(!v) u.position = "none";
-        return v;
-    }
-}
-
 module.exports = function (seqMan) {
 
     router.get("/", csrfProtection, (req, res) => {
@@ -32,6 +15,12 @@ module.exports = function (seqMan) {
         if(res.locals.validated) {
             res.render("user/index");
         } else csrfRenderer(res, "user/register", req.csrfToken());
+    });
+
+    router.get("/manage", csrfProtection, (req, res) => {
+        if(res.locals.validated) {
+            res.render("user/index");
+        } else alertRedirect(res, "로그인이 필요합니다.");
     });
     
     //

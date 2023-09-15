@@ -20,6 +20,14 @@ const positionChecklist = {
     }
 }
 
+const { typeCheck, typeList } = require("../config/config");
+
+function OrdinaryContainer() {
+    this.worker = "";
+    this.incharge = "";
+    this.proxy = "";
+}
+
 module.exports = function (seqMan) {
 
     router.get("/", csrfProtection, (req, res) => {

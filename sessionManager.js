@@ -74,7 +74,7 @@ module.exports = function (seqMan) {
             let p = Object.keys(req.body);
 
             if(p.includes("_csrf") && req.method.toLowerCase() == "post") {
-                if(req.path == "/user") {
+                if(req.path == "/user") { // 로그인
                     let logged = false;
                     let username = typeof req.body.username == "string" ? mysql_real_escape_string(req.body.username) : "";
                     let password = typeof req.body.password == "string" ? mysql_real_escape_string(req.body.password) : "";
@@ -122,7 +122,7 @@ module.exports = function (seqMan) {
                     } else {
                         logger.info("Logged in. (" + username + ")");
                     }
-                } else if(req.path == "/user/register") {
+                } else if(req.path == "/user/register") { // 회원가입
                     let regged = false;
                     let username = typeof req.body.username == "string" ? mysql_real_escape_string(req.body.username) : "";
 
@@ -138,11 +138,22 @@ module.exports = function (seqMan) {
                     }
 
                     let password = typeof req.body.password == "string" ? mysql_real_escape_string(req.body.password) : "";
+                    let password2 = typeof req.body.password == "string" ? mysql_real_escape_string(req.body.password3) : "";
                     let name =  typeof req.body.name == "string" ? mysql_real_escape_string(req.body.name) : "";
                     let code =  typeof req.body.code == "string" ? mysql_real_escape_string(req.body.code) : "";
 
-                    if(password == "") {
+                    if(password == "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855") {
                         res.locals.replace = regFailCauses[3];
+                        next();
+                        return;
+                    }
+                    if(password2 == "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855") {
+                        res.locals.replace = regFailCauses[8];
+                        next();
+                        return;
+                    }
+                    if(password != password2) {
+                        res.locals.replace = regFailCauses[7];
                         next();
                         return;
                     }
