@@ -44,7 +44,8 @@ const stylingEmojis = {
     NAME: "😊",
     USERNAME: "💾",
     PASSWORD: "🔐",
-    CODE: "💍"
+    CODE: "💍",
+    POSITION: "💳"
 };
 
 function mysql_real_escape_string(str) {

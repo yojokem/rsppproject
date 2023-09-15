@@ -83,7 +83,7 @@ module.exports = function (seqMan) {
                         let user;
                         if(req.body['_csrf'].length == 36) {
                             user = (await seqMan.tables.user.findOne({
-                                attributes: ['id', 'username', 'name'],
+                                attributes: ['id', 'username', 'name', 'position'],
                                 where: {
                                     username: username,
                                     password: password,
@@ -100,11 +100,13 @@ module.exports = function (seqMan) {
                             req.session.user0 = null;
                         } else {
                             let name = user.name;
+                            let position = user.position;
                             req.session.user0 = {
                                 id: logged,
                                 username: username,
                                 password: password,
-                                name: name
+                                name: name,
+                                position: position
                             }
 
                             delete req.body.username;
