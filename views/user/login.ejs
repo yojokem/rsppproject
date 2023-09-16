@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RSPP 회원</title>
+        <title><%= lang("pageTitles")["user-login"] %></title>
         <%- include(viewDir('./_head')) %>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/core.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/sha256.js"></script>
@@ -47,8 +47,13 @@
                 $("#password3").keyup(enterRespond);
 
                 $("#submitBtn").click(function() {
+                    if($("#username").val().length > 10) {
+                        alert("<%= lang('user')['login']['RUN'] %>");
+                        return;
+                    }
+
                     if($("#password3").val().trim() == "") {
-                        alert("비밀번호가 빈칸일 수는 없습니다.");
+                        alert("<%= lang('user')['login']['PWE'] %>");
                         return;
                     }
                     $("#password3").val(CryptoJS.SHA256($("#password3").val()).toString());
@@ -62,7 +67,7 @@
         <div class="wrapper">
             <%- include(viewDir('./_navbar')) %>
             <div id="content" class="container-fluid">
-                <header><h2 id="pageTitle">RSPP 회원 탐색</h2></header>
+                <header><h2 id="pageTitle"><%= lang("pageTitles")["user-login"] %></h2></header>
                 <article>
                     <div class="container-md">
                         <section>
@@ -71,13 +76,13 @@
                                     <input type="hidden" name="_csrf", value="<%= _csrf %>" />
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="username0"><%= stylingEmojis.USERNAME %></span>
-                                        <input type="text" id="username" name="username" class="form-control" placeholder="아이디" aria-label="아이디" aria-describedby="username0" />
+                                        <input type="text" id="username" name="username" class="form-control" placeholder="<%= lang('user')['login']['placeholder_username'] %>" aria-label="<%= lang('user')['login']['placeholder_username'] %>" aria-describedby="username0" />
                                     </div>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="password0"><%= stylingEmojis.PASSWORD %></span>
-                                        <input type="password" id="password3" name="password" class="form-control" placeholder="비밀번호" aria-label="비밀번호" aria-describedby="password0" />
+                                        <input type="password" id="password3" name="password" class="form-control" placeholder="<%= lang('user')['login']['placeholder_password'] %>" aria-label="<%= lang('user')['login']['placeholder_password'] %>" aria-describedby="password0" />
                                     </div>
-                                    <input class="btn btn-primary" id="submitBtn" type="button" value="로그인" />
+                                    <input class="btn btn-primary" id="submitBtn" type="button" value="<%= lang('user')['login'].submitBtn %>" />
                                 </form>
                             </div>
                         </section>

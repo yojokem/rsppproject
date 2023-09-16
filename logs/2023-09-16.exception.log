@@ -58,3 +58,95 @@ Error
     at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2490:35)
     at async user.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
     at async userCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:175:33)
+2023-09-16 14:55:14 [RSPPProject] error: uncaughtException: Identifier 'lang' has already been declared
+C:\Users\homehome\Desktop\projects\rsppproject\language\select.js:8
+    let lang = def, pk = false;
+        ^
+
+SyntaxError: Identifier 'lang' has already been declared
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\language\index.js:6:18)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+2023-09-16 14:55:14 [RSPPProject] error: uncaughtException: Identifier 'lang' has already been declared
+C:\Users\homehome\Desktop\projects\rsppproject\language\select.js:8
+    let lang = def, pk = false;
+        ^
+
+SyntaxError: Identifier 'lang' has already been declared
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\language\index.js:6:18)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+2023-09-16 15:06:47 [RSPPProject] error: uncaughtException: id is not defined
+ReferenceError: id is not defined
+    at initModels (C:\Users\homehome\Desktop\projects\rsppproject\models\init-models.js:25:54)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\sequelManager.js:20:13)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:21:16)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+2023-09-16 15:06:47 [RSPPProject] error: uncaughtException: id is not defined
+ReferenceError: id is not defined
+    at initModels (C:\Users\homehome\Desktop\projects\rsppproject\models\init-models.js:25:54)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\sequelManager.js:20:13)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:21:16)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+2023-09-16 15:06:47 [RSPPProject] error: uncaughtException: id is not defined
+ReferenceError: id is not defined
+    at initModels (C:\Users\homehome\Desktop\projects\rsppproject\models\init-models.js:25:54)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\sequelManager.js:20:13)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:21:16)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+2023-09-16 15:06:47 [RSPPProject] error: uncaughtException: id is not defined
+ReferenceError: id is not defined
+    at initModels (C:\Users\homehome\Desktop\projects\rsppproject\models\init-models.js:25:54)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\sequelManager.js:20:13)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:21:16)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+2023-09-16 15:06:47 [RSPPProject] error: uncaughtException: id is not defined
+ReferenceError: id is not defined
+    at initModels (C:\Users\homehome\Desktop\projects\rsppproject\models\init-models.js:25:54)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\sequelManager.js:20:13)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:21:16)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)

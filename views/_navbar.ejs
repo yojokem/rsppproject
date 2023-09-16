@@ -1,6 +1,6 @@
 <nav class="navbar bg-light navbar-light">
     <div class="container">
-        <a href="/" class="navbar-brand">RSPP</a>
+        <a href="/" class="navbar-brand"><%= lang("brand") %></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav-menu"
             aria-controls="navbarNav-menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -8,14 +8,14 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav-menu">
             <ul class="navbar-nav text-center">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">홈</a>
+                    <a class="nav-link active" aria-current="page" href="/"><%= lang('links')['home'] %></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/user"><%= validated ? "회원 정보" : "로그인" %></a>
+                    <a class="nav-link" href="/user"><%= validated ? lang("links")['profile'] : lang("links")['login'] %></a>
                     <% if (validated) { %>
-                        <a class="nav-link" href="/user/logout">로그아웃</a>
+                        <a class="nav-link" href="/user/logout"><%= lang("links")['logout'] %></a>
                     <% } else { %>
-                        <a class="nav-link" href="/user/register">회원가입</a>
+                        <a class="nav-link" href="/user/register"><%= lang("links")['register'] %></a>
                     <% } %>
                 </li>
             </ul>

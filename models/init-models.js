@@ -5,6 +5,7 @@ var _ordinarycol = require("./ordinarycol");
 var _proxycol = require("./proxycol");
 var _refundcol = require("./refundcol");
 var _user = require("./user");
+var _positionrequest = require("./positionrequest");
 
 function initModels(sequelize) {
   var collect = _collect(sequelize, DataTypes);
@@ -13,6 +14,7 @@ function initModels(sequelize) {
   var proxycol = _proxycol(sequelize, DataTypes);
   var refundcol = _refundcol(sequelize, DataTypes);
   var user = _user(sequelize, DataTypes);
+  var positionrequest = _positionrequest(sequelize, DataTypes);
 
   ordinarycol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
   proxycol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
@@ -21,6 +23,10 @@ function initModels(sequelize) {
   collect.hasMany(ordinarycol, { foreignKey: 'pass', targetKey: 'passid' });
   collect.hasMany(proxycol, { foreignKey: 'pass', targetKey: 'passid' });
   collect.hasMany(refundcol, { foreignKey: 'pass', targetKey: 'passid' });
+
+  user.hasMany(login, { foreignKey: 'user', targetKey: 'id'});
+
+  user.hasMany(positionrequest, { foreignKey: 'userID', targetKey: 'id'});
 
   user.hasMany(ordinarycol, {
     foreignKey: 'username',
@@ -89,6 +95,7 @@ function initModels(sequelize) {
   proxycol.sync();
   refundcol.sync();
   user.sync();
+  positionrequest.sync();
 
   return {
     collect,
@@ -97,6 +104,7 @@ function initModels(sequelize) {
     proxycol,
     refundcol,
     user,
+    positionrequest
   };
 }
 

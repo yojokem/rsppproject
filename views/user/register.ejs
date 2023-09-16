@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RSPP 회원</title>
+        <title><%= lang("pageTitles")["user-register"] %></title>
         <%- include(viewDir('./_head')) %>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/core.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/sha256.js"></script>
@@ -39,32 +39,47 @@
 
                 $("#submitBtn").click(function() {
                     if($("#name").val().trim() == "") {
-                        alert("성함을 입력해 주세요.");
+                        alert("<%= lang('user')['register']['name_i'] %>");
+                        return;
+                    }
+
+                    if($("#name").val().length > 10) {
+                        alert("<%= lang('user')['register']['name_l'] %>");
                         return;
                     }
 
                     if($("#username").val().trim() == "") {
-                        alert("아이디가 빈칸일 수는 없습니다.");
+                        alert("<%= lang('user')['register']['un_i'] %>");
+                        return;
+                    }
+
+                    if($("#username").val().length > 30) {
+                        alert("<%= lang('user')['register']['un_l'] %>");
                         return;
                     }
 
                     if($("#password3").val().trim() == "") {
-                        alert("비밀번호가 빈칸일 수는 없습니다.");
+                        alert("<%= lang('user')['register']['pw_i'] %>");
                         return;
                     }
 
                     if($("#password4").val().trim() == "") {
-                        alert("비밀번호 확인을 위하여 재입력해 주세요.");
+                        alert("<%= lang('user')['register']['pw_c_i'] %>");
                         return;
                     }
 
                     if($("#password3").val() != $("#password4").val()) {
-                        alert("입력하신 비밀번호와 확인용 재입력 비밀번호가 같지 않습니다.");
+                        alert("<%= lang('user')['register']['pw_r_c'] %>");
+                        return;
+                    }
+                    
+                    if($("#code").val().length > 10) {
+                        alert("<%= lang('user')['register']['code_l'] %>");
                         return;
                     }
 
                     if($("#code").val().trim() == "") {
-                        alert("복구 코드를 입력하셔야 합니다.");
+                        alert("<%= lang('user')['register']['code_i'] %>");
                         return;
                     }
 
@@ -80,7 +95,7 @@
         <div class="wrapper">
             <%- include(viewDir('./_navbar')) %>
             <div id="content" class="container-fluid">
-                <header><h2 id="pageTitle">RSPP 회원 등록</h2></header>
+                <header><h2 id="pageTitle"><%= lang("pageTitles")["user-register"] %></h2></header>
                 <article>
                     <div class="container-md">
                         <section>
@@ -89,28 +104,28 @@
                                     <input type="hidden" name="_csrf", value="<%= _csrf %>" />
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="name0"><%= stylingEmojis.NAME %></span>
-                                        <input type="text" id="name" name="name" class="form-control" placeholder="회원명" aria-label="회원명" aria-describedby="name0" />
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="<%= lang('user')['register']['placeholder_name'] %>" aria-label="<%= lang('user')['register']['placeholder_name'] %>" aria-describedby="name0" />
                                     </div>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="username1"><%= stylingEmojis.USERNAME %></span>
-                                        <input type="text" id="username" name="username" class="form-control" placeholder="아이디" aria-label="아이디" aria-describedby="username1" />
+                                        <input type="text" id="username" name="username" class="form-control" placeholder="<%= lang('user')['register']['placeholder_username'] %>" aria-label="<%= lang('user')['register']['placeholder_username'] %>" aria-describedby="username1" />
                                     </div>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="password1"><%= stylingEmojis.PASSWORD %></span>
-                                        <input type="password" id="password3" name="password" class="form-control" placeholder="비밀번호" aria-label="비밀번호" aria-describedby="password1" />
+                                        <input type="password" id="password3" name="password" class="form-control" placeholder="<%= lang('user')['register']['placeholder_password3'] %>" aria-label="<%= lang('user')['register']['placeholder_password3'] %>" aria-describedby="password1" />
                                     </div>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="password2"><%= stylingEmojis.PASSWORD %></span>
-                                        <input type="password" id="password4" name="password3" class="form-control" placeholder="비밀번호 확인" aria-label="비밀번호 확인" aria-describedby="password2" />
+                                        <input type="password" id="password4" name="password3" class="form-control" placeholder="<%= lang('user')['register']['placeholder_password4'] %>" aria-label="<%= lang('user')['register']['placeholder_password4'] %>" aria-describedby="password2" />
                                     </div>
                                     <div>
-                                        <p style="font-size: calc(40%);">비밀번호에 띄어쓰기( ) 포함 시 비밀번호로 인정될 수도 있습니다.</p>
+                                        <p style="font-size: calc(40%);"><%= lang('user')['register']['password-description'] %></p>
                                     </div>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="code0"><%= stylingEmojis.CODE %></span>
-                                        <input type="number" id="code" name="code" class="form-control" placeholder="코드" aria-label="코드" aria-describedby="code0" />
+                                        <input type="number" id="code" name="code" class="form-control" placeholder="<%= lang('user')['register']['placeholder_code'] %>" aria-label="<%= lang('user')['register']['placeholder_code'] %>" aria-describedby="code0" />
                                     </div>
-                                    <input class="btn btn-primary" id="submitBtn" type="button" value="회원 등록 요청" />
+                                    <input class="btn btn-primary" id="submitBtn" type="button" value="<%= lang('user')['register']['submitBtn'] %>" />
                                 </form>
                             </div>
                         </section>

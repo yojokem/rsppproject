@@ -1,13 +1,13 @@
 <% if(!validated) {%>
     <script type="text/javascript">
-        alert("로그인 상태가 해제되어 있습니다. 로그인 페이지로 이동합니다.");
+        alert("<%= lang('user')['loginInvalid'] %>");
         location.href = "/user";
     </script>
 <% } %>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RSPP 회원</title>
+        <title><%= lang('pageTitles')['user'] %></title>
         <%- include(viewDir('./_head')) %>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/core.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/sha256.js"></script>
@@ -39,6 +39,10 @@
                 });
             }
 
+            function check(d) {
+                return d == '<%= user.position %>';
+            }
+
             $(document).ready(function() {
                 $.ajax({
                     url: "/positions",
@@ -47,13 +51,13 @@
                     if(json) {
                         if(json.data) {
                             let data = json.data;
-                            let output = "<option value='' disabled>직책 선택</option>";
+                            let output = "<option value='' disabled><%= lang('user')['index']['positionCheck'] %></option>";
                             for(var i in Object.keys(data)) {
                                 let key = Object.keys(data)[i];
                                 let value = Object.keys(data)[i];
                                 
                                 let k = `
-                                    <option value="${key}">${value}</option>
+                                    <option value="${key}" ${check(value) ? "selected" : ""}>${value}</option>
                                 `;
                                 output += k;
                             }
@@ -64,18 +68,57 @@
                     console.log("Could not load positions list!");
                 });
 
+                function enterRespond(e) {
+                    if(e.which == 13) {
+                        $("#submitBtn1").click();
+                    }
+                }
+
+                $("#password_alt_re").keyup(enterRespond);
+
                 $("#submitBtn1").click(function() {
                     if($("#password_cur").val().trim() == "" || $("#password_alt").val().trim() == "" || $("#password_alt_re").val().trim() == "") {
-                        alert("빈칸이 있습니다. 다시 시도하세요.");
+                        alert("<%= lang('user')['index']['form1-cursor-blank'] %>");
                     } else {
-                        $("#password_cur").val(CryptoJS.SHA256($("#password_cur").val()).toString());
-                        $("#password_alt").val(CryptoJS.SHA256($("#password_alt").val()).toString());
-                        $("#password_alt_re").val(CryptoJS.SHA256($("#password_alt_re").val()).toString());
+                        let cur = CryptoJS.SHA256($("#password_cur").val()).toString();
+                        let alt = CryptoJS.SHA256($("#password_alt").val()).toString();
+                        let alt_re = CryptoJS.SHA256($("#password_alt_re").val()).toString();
 
-                        if($("#password_alt").val() == $("#password_alt_re").val()) $("#passwordAlterForm").submit();
-                        else alert("신규 비밀번호와 재입력하신 것이 일치하지 않습니다.");
+                        if($("#password_alt").val() == $("#password_alt_re").val()) {
+                            $("#password_cur").val(cur);
+                            $("#password_alt").val(alt);
+                            $("#password_alt_re").val(alt_re);
+                            $("#passwordAlterForm").submit();
+                        }
+                        else alert("<%= lang('user')['index']['newPW-nM'] %>");
                     }
                 });
+
+                $("#submitBtn2").click(function() {
+                    $.ajax({
+                        url: "/code",
+                        method: "GET"
+                    }).then(json => {
+                        if(json) {
+                            if(json.data) {
+                                let data = json.data;
+                                let output = "<option value='' disabled><%= lang('user')['index']['positionCheck'] %></option>";
+                                for(var i in Object.keys(data)) {
+                                    let key = Object.keys(data)[i];
+                                    let value = Object.keys(data)[i];
+                                    
+                                    let k = `
+                                        <option value="${key}" ${check(value) ? "selected" : ""}>${value}</option>
+                                    `;
+                                    output += k;
+                                }
+                                $("#positions").html(output);
+                            }
+                        }
+                    }).fail(() => {
+                        console.log("Could not load positions list!");
+                    });
+                })
             });
         </script>
     </head>
@@ -83,45 +126,46 @@
         <div class="wrapper">
             <%- include(viewDir('./_navbar')) %>
             <div id="content" class="container-fluid">
-                <header><h2 id="pageTitle">RSPP 회랑</h2></header>
+                <header><h2 id="pageTitle"><%= lang('pageTitles')['user'] %></h2></header>
                 <article>
                     <div class="container-md">
                         <section>
                             <div id="name" class="row">
-                                <div class="col-sm-8"><span style="font-family: 'BKKGothic Bold'; font-size: 1.4em;"><%= user.name %></span> 님</div>
-                                <div class="col-sm-3"><input type="button" class="btn btn-sm btn-secondary" onclick="location.href = '/user/logout'" value="로그아웃" /></div>
+                                <div class="col-sm-8"><span style="font-family: 'BKKGothic Bold'; font-size: 1.4em;"><%= user.name %></span> <%= lang("user")['index']['sama'] %></div>
+                                <div class="col-sm-3"><input type="button" class="btn btn-sm btn-secondary" onclick="location.href = '/user/logout'" value="<%= lang('links')['logout'] %>" /></div>
                             </div>
                             <hr>
                             <div id="username">
                                 <div class="input-group mb-3">
-                                    <span class="input-group-text" id="username0">아이디</span>
-                                    <input type="text" id="username" name="username" readonly class="form-control" placeholder="아이디" aria-label="아이디" value="<%= user.username %>" aria-describedby="username0" />
+                                    <span class="input-group-text" id="username0"><%= stylingEmojis.USERNAME %></span>
+                                    <input type="text" id="username" name="username" readonly class="form-control" placeholder="<%= lang('user')['login']['placeholder_username'] %>" aria-label="<%= lang('user')['login']['placeholder_username'] %>" value="<%= user.username %>" aria-describedby="username0" />
                                 </div>
                             </div>
                             <div id="password">
                                 <form name="passwordAlterForm" id="passwordAlterForm" action="/user/password/<%= user.id %>" method="POST">
+                                    <input type="hidden" name="_csrf", value="<%= _csrf %>" />
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="password0"><%= stylingEmojis.PASSWORD %></span>
-                                        <input type="password" id="password_cur" name="password" class="form-control" placeholder="기존 비밀번호" aria-label="기존 비밀번호" aria-describedby="password0" />
+                                        <input type="password" id="password_cur" name="password" class="form-control" placeholder="<%= lang('user')['index']['curPW'] %>" aria-label="<%= lang('user')['index']['curPW'] %>" aria-describedby="password0" />
                                     </div>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="password2"><%= stylingEmojis.PASSWORD %></span>
-                                        <input type="password" id="password_alt" name="password_alt" class="form-control" placeholder="신규 비밀번호" aria-label="신규 비밀번호" aria-describedby="password2" />
+                                        <input type="password" id="password_alt" name="password_alt" class="form-control" placeholder="<%= lang('user')['index']['newPW'] %>" aria-label="<%= lang('user')['index']['newPW'] %>" aria-describedby="password2" />
                                     </div>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="password3"><%= stylingEmojis.PASSWORD %></span>
-                                        <input type="password" id="password_alt_re" name="password_alt_re" class="form-control" placeholder="신규 비밀번호 재입력" aria-label="신규 비밀번호 재입력" aria-describedby="password3" />
+                                        <input type="password" id="password_alt_re" name="password_alt_re" class="form-control" placeholder="<%= lang('user')['index']['newPW-c'] %>" aria-label="<%= lang('user')['index']['newPW-c'] %>" aria-describedby="password3" />
                                     </div>
-                                    <input class="btn btn-info" id="submitBtn1" type="button" value="비밀번호 변경" />
+                                    <input class="btn btn-info" id="submitBtn1" type="button" value="<%= lang('user')['index']['pwchange'] %>" />
                                 </form>
                             </div>
                             <div id="code">
                                 <form name="codeCheckForm" id="codeCheckForm">
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="code0"><%= stylingEmojis.CODE %></span>
-                                        <input type="number" id="code" name="code" class="form-control" placeholder="복구 코드" aria-label="복구 코드" aria-describedby="code0" />
+                                        <input type="number" id="code" name="code" class="form-control" placeholder="<%= lang('user')['index']['code'] %>" aria-label="<%= lang('user')['index']['code'] %>" aria-describedby="code0" />
                                     </div>
-                                    <input class="btn btn-info" id="submitBtn2" type="button" value="코드 확인" />
+                                    <input class="btn btn-info" id="submitBtn2" type="button" value="<%= lang('user')['index']['code_confirm'] %>" />
                                 </form>
                             </div>
                             <p style="font-size: 0.2em;"></p>

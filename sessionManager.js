@@ -234,6 +234,7 @@ module.exports = function (seqMan) {
             res.locals.$DIR_VIEW = path.join(__dirname, "./views/");
             res.locals.viewDir = p => path.join(res.locals.$DIR_VIEW, p);
             res.locals.positions = positions;
+            res.locals.lang = lang;
 
             next();
         }

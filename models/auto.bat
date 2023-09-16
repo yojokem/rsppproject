@@ -1,0 +1,1 @@
+sequelize-auto -o "./models" -d rspp -h localhost -u root -p 3306 -x Police68194818! -e mysql

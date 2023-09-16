@@ -1,3 +1,4 @@
+const logger = require("../config/winston")().logger;
 const express = require("express");
 const router = express.Router();
 const csrfProtection = require("csurf")();
@@ -7,19 +8,19 @@ module.exports = function (seqMan) {
 
     router.get("/", csrfProtection, (req, res) => {
         if(res.locals.validated) {
-            res.render("user/index");
+            csrfRenderer(res, "user/index", req.csrfToken());
         } else csrfRenderer(res, "user/login", req.csrfToken());
     });
     
     router.get("/register", csrfProtection, (req, res) => {
         if(res.locals.validated) {
-            res.render("user/index");
+            csrfRenderer(res, "user/index", req.csrfToken());
         } else csrfRenderer(res, "user/register", req.csrfToken());
     });
 
     router.get("/manage", csrfProtection, (req, res) => {
         if(res.locals.validated) {
-            res.render("user/index");
+            csrfRenderer(res, "user/manage", req.csrfToken());
         } else alertRedirect(res, "로그인이 필요합니다.");
     });
     
@@ -51,6 +52,55 @@ module.exports = function (seqMan) {
             }
         }
     });
+
+    router.post("/password/:id", csrfProtection, async (req, res) => {
+        if(res.locals.validated) {
+            let password_cur = typeof req.body.password == "string" ? mysql_real_escape_string(req.body.password) : "";
+
+            let p = await seqMan.tables.user.findOne({
+                attributes: ['id'],
+                where: {
+                    id: req.params.id,
+                    password: password_cur
+                }
+            });
+
+            if(p) {
+                let password_alt = typeof req.body.password == "string" ? mysql_real_escape_string(req.body.password_alt) : "";
+                let password_alt_re = typeof req.body.password == "string" ? mysql_real_escape_string(req.body.password_alt_re) : "";
+                
+                if(password_cur.length != 64 || password_alt.length != 64 || password_alt_re.length != 64) {
+                    alertRedirect(res, "암호화 과정에 오류가 있습니다. 다시 시도하세요.", "/");
+                    return;
+                }
+                if(password_cur == "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" || password_alt == "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" || password_alt_re == "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855") {
+                    alertRedirect(res, "빈칸이 있습니다. 다시 시도하세요.", "/");
+                    return;
+                }
+                if(password_alt != password_alt_re) {
+                    alertRedirect(res, "신규 비밀번호와 그 재입력 값이 일치하지 않습니다. 다시 시도하세요.", "/");
+                    return;
+                }
+
+                let rowID;
+                if(req.body['_csrf'].length == 36) {
+                    rowID = await seqMan.tables.user.update({
+                        password: password_alt
+                    }, {
+                        where: {
+                            id: req.params.id,
+                            password: password_cur
+                        }
+                    });
+
+                    alertRedirect(res, "변경되었습니다! (" + rowID + ")", "/");
+                }
+            } else {
+                alertRedirect(res, "사용자 정보가 존재하지 않습니다. 관리자에게 문의 바랍니다.\n▷ 비밀번호가 틀렸을 수도 있습니다.", "/user");
+                logger.error("Invalid Access for Password Change: " + req.params.id);
+            }
+        }
+    })
     /* Post Integration END */
     
     //

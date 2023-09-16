@@ -56,6 +56,8 @@ app.get("/copyrights", (req, res) => {
 
 const router_User = require("./routers/user")(seqMan);
 app.use("/user", router_User);
+const router_Position = require("./routers/position")(seqMan);
+app.use("/positions", router_Position);
 
 const router_Collect = require("./routers/collect")(seqMan);
 app.use("/collect", router_Collect);
