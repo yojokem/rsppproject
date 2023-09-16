@@ -58,3 +58,13 @@ footer {
 #positions {
     text-align: center;
 }
+
+/**/
+
+select option[value=""][disabled] {
+	display: none;
+}
+
+select:invalid {
+    color: #a00;
+}

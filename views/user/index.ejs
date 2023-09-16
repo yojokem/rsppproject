@@ -47,14 +47,14 @@
                     if(json) {
                         if(json.data) {
                             let data = json.data;
-                            let output = "";
+                            let output = "<option value='' disabled>직책 선택</option>";
                             for(var i in Object.keys(data)) {
                                 let key = Object.keys(data)[i];
                                 let value = Object.keys(data)[i];
-                                let k = `<div class="row">
-                                    <div class="col-sm-2">${key}</div>
-                                    <div class="col-sm-2">${value}</div>
-                                </div>`;
+                                
+                                let k = `
+                                    <option value="${key}">${value}</option>
+                                `;
                                 output += k;
                             }
                             $("#positions").html(output);
@@ -64,7 +64,7 @@
                     console.log("Could not load positions list!");
                 });
 
-                $("#submitBtn").click(function() {
+                $("#submitBtn1").click(function() {
                     if($("#password_cur").val().trim() == "" || $("#password_alt").val().trim() == "" || $("#password_alt_re").val().trim() == "") {
                         alert("빈칸이 있습니다. 다시 시도하세요.");
                     } else {
@@ -112,7 +112,7 @@
                                         <span class="input-group-text" id="password3"><%= stylingEmojis.PASSWORD %></span>
                                         <input type="password" id="password_alt_re" name="password_alt_re" class="form-control" placeholder="신규 비밀번호 재입력" aria-label="신규 비밀번호 재입력" aria-describedby="password3" />
                                     </div>
-                                    <input class="btn btn-info" id="submitBtn" type="button" value="비밀번호 변경" />
+                                    <input class="btn btn-info" id="submitBtn1" type="button" value="비밀번호 변경" />
                                 </form>
                             </div>
                             <div id="code">
@@ -121,23 +121,18 @@
                                         <span class="input-group-text" id="code0"><%= stylingEmojis.CODE %></span>
                                         <input type="number" id="code" name="code" class="form-control" placeholder="복구 코드" aria-label="복구 코드" aria-describedby="code0" />
                                     </div>
-                                    <input class="btn btn-info" id="submitBtn" type="button" value="코드 변경" />
+                                    <input class="btn btn-info" id="submitBtn2" type="button" value="코드 확인" />
                                 </form>
                             </div>
                             <p style="font-size: 0.2em;"></p>
                             <div id="position">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="position10"><%= stylingEmojis.POSITION %></span>
-                                    <input type="text" id="position11" readonly class="form-control" placeholder="직책" aria-label="직책" value="<%= user.position %>" aria-describedby="position10" />
-                                </div>
-                                <form name="positionRequestForm" id="positionRequestForm" style="">
+                                <form name="positionRequestForm" id="positionRequestForm">
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="position0"><%= stylingEmojis.POSITION %></span>
-                                        <input type="text" id="position" name="position" class="form-control" placeholder="직책" aria-label="직책" aria-describedby="position0" />
+                                        <select name="position" id="positions" aria-label="직책" aria-describedby="position0" class="form-control">
+                                        </select>
                                     </div>
-                                    <p style="font-size: 0.8em">직책은 아래 표에 맞게 지정된 "직책 코드"로 작성해 주셔야 합니다.</p>
-                                    <div id="positions" class="row"></div>
-                                    <input class="btn btn-light" id="submitBtn" type="button" value="직책 변경 요청" />
+                                    <input class="btn btn-light" id="submitBtn3" type="button" value="직책 변경 요청" />
                                 </form>
                             </div>
                         </section>

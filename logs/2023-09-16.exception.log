@@ -1,0 +1,60 @@
+2023-09-16 11:17:19 [RSPPProject] error: uncaughtException: lang is not defined
+ReferenceError: lang is not defined
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\language\index.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\config\config.js:125:11)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+2023-09-16 11:17:19 [RSPPProject] error: uncaughtException: lang is not defined
+ReferenceError: lang is not defined
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\language\index.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\config\config.js:125:11)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+2023-09-16 11:41:00 [RSPPProject] error: uncaughtException: Data too long for column 'name' at row 1
+Error
+    at Query.run (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2490:35)
+    at async user.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+    at async userCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:175:33)
+2023-09-16 11:41:00 [RSPPProject] error: uncaughtException: Data too long for column 'name' at row 1
+Error
+    at Query.run (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2490:35)
+    at async user.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+    at async userCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:175:33)
+2023-09-16 11:41:00 [RSPPProject] error: uncaughtException: Data too long for column 'name' at row 1
+Error
+    at Query.run (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2490:35)
+    at async user.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+    at async userCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:175:33)
+2023-09-16 11:41:00 [RSPPProject] error: uncaughtException: Data too long for column 'name' at row 1
+Error
+    at Query.run (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2490:35)
+    at async user.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+    at async userCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:175:33)

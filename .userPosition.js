@@ -1,8 +1,7 @@
 const logger = require("./config/winston")().logger;
 const path = require("path");
 const { Op } = require("sequelize");
-
-const positions = ['party', 'genaff', 'agent', 'executor', 'chairman', 'auditor', 'abandoned', 'expelled', 'cancelled', 'none'];
+const { positions } = require("./config/config");
 
 module.exports = function (seqMan) {
     

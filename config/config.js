@@ -19,25 +19,35 @@ const DB = {
     connectionLimit: 80,
 };
 
+const lang = require("../language/index");
+
 const regFailCauses = {
     /** System */
-    0: "시스템 에러. 관리자에게 문의하십시오.",
+    0: lang("regFail")[0],
     /** Already username */
-    1: "이미 사용 중인 사용자 이름입니다. 다른 것으로 시도하세요.",
+    1: lang("regFail")[1],
     /** Not typed : username */
-    2: "사용자 이름을 입력하지 않으셨습니다. 다시 시도하세요.",
+    2: lang("regFail")[2],
     /** Not typed : password */
-    3: "비밀번호를 입력하지 않으셨습니다. 다시 시도하세요.",
+    3: lang("regFail")[3],
     /** Not typed : name */
-    4: "성명을 입력하지 않으셨습니다. 다시 시도하세요.",
+    4: lang("regFail")[4],
     /** Not typed : code */
-    5: "복구 코드를 입력하지 않으셨습니다. 다시 시도하세요.",
+    5: lang("regFail")[5],
     /** Not typed : infringed error */
-    6: "registration failed due to unknown cause(s). infringed.",
+    6: lang("regFail")[6],
     /** Password and Password Confirm NOT Match */
-    7: "입력하신 비밀번호와 확인용 재입력 비밀번호가 같지 않습니다.",
+    7: lang("regFail")[7],
     /** Not typed : password confirm */
-    8: "확인용 재입력 비밀번호를 입력하지 않으셨습니다. 다시 시도하세요.",
+    8: lang("regFail")[8],
+    /** LENGTH : username */
+    9: lang("regFail")[9],
+    /** LENGTH : name */
+    10: lang("regFail")[10],
+    /** LENGTH : code */
+    11: lang("regFail")[11],
+    /** Unique name invalid */
+    12: lang("regFail")[12]
 };
 
 const stylingEmojis = {
@@ -120,5 +130,7 @@ module.exports = {
     type: {
         typeCheck: typeCheck,
         typeList: typeList
-    }
+    },
+    positions: ['party', 'genaff', 'agent', 'executor', 'chairman', 'auditor', 'abandoned', 'expelled', 'cancelled', 'none'],
+    lang: lang
 }

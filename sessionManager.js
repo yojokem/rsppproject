@@ -6,7 +6,7 @@
 const logger = require("./config/winston")().logger;
 const path = require("path");
 const { Op } = require("sequelize");
-const { regFailCauses } = require("./config/config")
+const { regFailCauses, positions, lang } = require("./config/config");
 
 async function validate(user, seqMan) {
     return (await seqMan.tables.user.findOne({
@@ -25,6 +25,15 @@ async function checkUsernameAvailable(username, seqMan) {
         attributes: ['username'],
         where: {
             username: mysql_real_escape_string(username)
+        }
+    })) != null;
+}
+
+async function checkNameAvailable(name, seqMan) {
+    return (await seqMan.tables.user.findOne({
+        attributes: ['name'],
+        where: {
+            name: mysql_real_escape_string(name)
         }
     })) != null;
 }
@@ -56,7 +65,7 @@ function mysql_real_escape_string(str) {
     });
 }
 
-logger.info("Session Manager ready ✔");
+logger.info(lang("$$L2"));
 
 module.exports = function (seqMan) {
     return {
@@ -120,16 +129,22 @@ module.exports = function (seqMan) {
                     } else req.session.user0 = null;
 
                     if(logged == false) {
-                        logger.info("False Login has occurred. [" + req.ip + "]");
+                        logger.info("False Login has occurred." + " [" + req.ip + "]");
                     } else {
                         logger.info("Logged in. (" + username + ")");
                     }
                 } else if(req.path == "/user/register") { // 회원가입
                     let regged = false;
+                    res.locals.regged = regged;
                     let username = typeof req.body.username == "string" ? mysql_real_escape_string(req.body.username) : "";
 
                     if(username == "") {
                         res.locals.replace = regFailCauses[2];
+                        next();
+                        return;
+                    }
+                    if(username.length > 30) {
+                        res.locals.replace = regFailCauses[9];
                         next();
                         return;
                     }
@@ -144,6 +159,10 @@ module.exports = function (seqMan) {
                     let name =  typeof req.body.name == "string" ? mysql_real_escape_string(req.body.name) : "";
                     let code =  typeof req.body.code == "string" ? mysql_real_escape_string(req.body.code) : "";
 
+                    if(password.length != 64 || password2.length != 64) {
+                        next();
+                        return;
+                    }
                     if(password == "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855") {
                         res.locals.replace = regFailCauses[3];
                         next();
@@ -160,12 +179,27 @@ module.exports = function (seqMan) {
                         return;
                     }
                     if(code == "") {
-                        res.locals.replace = regFailCauses[5]
+                        res.locals.replace = regFailCauses[5];
+                        next();
+                        return;
+                    }
+                    if(code.length > 10) {
+                        res.locals.replace = regFailCauses[11];
                         next();
                         return;
                     }
                     if(name == "") {
                         res.locals.replace = regFailCauses[4];
+                        next();
+                        return;
+                    }
+                    if(name.length > 10) {
+                        res.locals.replace = regFailCauses[10];
+                        next();
+                        return;
+                    }
+                    if(await checkNameAvailable(name, seqMan)) {
+                        res.locals.replace = regFailCauses[12];
                         next();
                         return;
                     }
@@ -199,6 +233,7 @@ module.exports = function (seqMan) {
         imports: function (req, res, next) { // res.locals에 넘겨줄 함수, 마지막에 호출된다.
             res.locals.$DIR_VIEW = path.join(__dirname, "./views/");
             res.locals.viewDir = p => path.join(res.locals.$DIR_VIEW, p);
+            res.locals.positions = positions;
 
             next();
         }

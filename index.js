@@ -6,11 +6,11 @@ const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 
 const app = express();
-const {PORT, cookieSign, stylingEmojis} = require("./config/config");
+const {PORT, cookieSign, stylingEmojis, lang} = require("./config/config");
 const eSession = require("./eSession");
 const sessionManager0 = require("./sessionManager");
 
-logger.info("module loaded and started initialization.");
+logger.info(lang('$L1'));
 
 // Application Initialization //
 
@@ -63,7 +63,7 @@ app.use("/collect", router_Collect);
 // End of Initialization //
 
 app.listen(PORT, function () {
-    logger.info("Started!");
+    logger.info(lang('$L2'));
 })
 
-logger.info("initialized.");
+logger.info(lang('$L3'));
