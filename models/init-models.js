@@ -6,6 +6,7 @@ var _proxycol = require("./proxycol");
 var _refundcol = require("./refundcol");
 var _user = require("./user");
 var _positionrequest = require("./positionrequest");
+var _positions = require("./positions");
 
 function initModels(sequelize) {
   var collect = _collect(sequelize, DataTypes);
@@ -15,6 +16,7 @@ function initModels(sequelize) {
   var refundcol = _refundcol(sequelize, DataTypes);
   var user = _user(sequelize, DataTypes);
   var positionrequest = _positionrequest(sequelize, DataTypes);
+  var positions = _positions(sequelize, DataTypes);
 
   ordinarycol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
   proxycol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
@@ -96,6 +98,7 @@ function initModels(sequelize) {
   refundcol.sync();
   user.sync();
   positionrequest.sync();
+  positions.sync();
 
   return {
     collect,
@@ -104,7 +107,8 @@ function initModels(sequelize) {
     proxycol,
     refundcol,
     user,
-    positionrequest
+    positionrequest,
+    positions
   };
 }
 

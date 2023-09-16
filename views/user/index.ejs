@@ -12,6 +12,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/core.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/sha256.js"></script>
         <script type="text/javascript">
+            const positions = "<%= positions %>".split(",");
+
             function mysql_real_escape_string(str) {
                 if (typeof str != "string") return str;
 
@@ -55,7 +57,7 @@
                             let value = data[key];
                             
                             let k = `
-                                <option value="${key}" ${check(value) ? "selected" : ""}>${value}</option>
+                                <option value="${key}" ${check(key) ? "selected" : ""}>${value}</option>
                             `;
                             output += k;
                         }
@@ -116,6 +118,11 @@
                         console.log("Could not load positions list!");
                     });
                 })
+
+                $("#submitBtn3").click(function () {
+                    if(positions.includes($("#positions").val())) $("#positionRequestForm").submit();
+                    else alert("적절한 직책만 요청할 수 있습니다!");
+                });
             });
         </script>
     </head>
@@ -167,7 +174,8 @@
                             </div>
                             <p style="font-size: 0.2em;"></p>
                             <div id="position">
-                                <form name="positionRequestForm" id="positionRequestForm">
+                                <form name="positionRequestForm" id="positionRequestForm" action="/positions/request" method="POST">
+                                    <input type="hidden" name="_csrf", value="<%= _csrf %>" />
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="position0"><%= stylingEmojis.POSITION %></span>
                                         <select name="position" id="positions" aria-label="직책" aria-describedby="position0" class="form-control">

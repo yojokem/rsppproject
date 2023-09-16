@@ -298,3 +298,1081 @@ TypeError: Cannot read properties of undefined (reading 'username')
     at userCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:229:13)
     at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
     at trim_prefix (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:328:13)
+2023-09-16 23:03:09 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:09 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:09 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:09 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:09 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:09 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:09 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:09 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:09 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:09 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:09 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:09 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:09 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:09 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:10 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:10 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:10 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:10 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:10 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:10 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:10 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:10 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:10 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:10 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:10 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:10 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:10 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:03:10 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at update (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:25:26)
+    at userSessionCheck (C:\Users\homehome\Desktop\projects\rsppproject\sessionManager.js:89:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-16 23:20:24 [RSPPProject] error: uncaughtException: p is not defined
+ReferenceError: p is not defined
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:134:13
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:346:12)
+2023-09-16 23:20:24 [RSPPProject] error: uncaughtException: p is not defined
+ReferenceError: p is not defined
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:134:13
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:346:12)
+2023-09-16 23:20:24 [RSPPProject] error: uncaughtException: p is not defined
+ReferenceError: p is not defined
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:134:13
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:346:12)
+2023-09-16 23:20:24 [RSPPProject] error: uncaughtException: p is not defined
+ReferenceError: p is not defined
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:134:13
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:346:12)
+2023-09-16 23:20:24 [RSPPProject] error: uncaughtException: p is not defined
+ReferenceError: p is not defined
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:134:13
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:346:12)
+2023-09-16 23:20:24 [RSPPProject] error: uncaughtException: p is not defined
+ReferenceError: p is not defined
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:134:13
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:346:12)
+2023-09-16 23:20:24 [RSPPProject] error: uncaughtException: p is not defined
+ReferenceError: p is not defined
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:134:13
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:346:12)
+2023-09-16 23:21:00 [RSPPProject] error: uncaughtException: username is not defined
+ReferenceError: username is not defined
+    at positionReview (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:20:27)
+    at positionRequest (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:51:24)
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:138:31
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+2023-09-16 23:21:00 [RSPPProject] error: uncaughtException: username is not defined
+ReferenceError: username is not defined
+    at positionReview (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:20:27)
+    at positionRequest (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:51:24)
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:138:31
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+2023-09-16 23:21:00 [RSPPProject] error: uncaughtException: username is not defined
+ReferenceError: username is not defined
+    at positionReview (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:20:27)
+    at positionRequest (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:51:24)
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:138:31
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+2023-09-16 23:21:00 [RSPPProject] error: uncaughtException: username is not defined
+ReferenceError: username is not defined
+    at positionReview (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:20:27)
+    at positionRequest (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:51:24)
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:138:31
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+2023-09-16 23:21:00 [RSPPProject] error: uncaughtException: username is not defined
+ReferenceError: username is not defined
+    at positionReview (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:20:27)
+    at positionRequest (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:51:24)
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:138:31
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+2023-09-16 23:21:00 [RSPPProject] error: uncaughtException: username is not defined
+ReferenceError: username is not defined
+    at positionReview (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:20:27)
+    at positionRequest (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:51:24)
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:138:31
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+2023-09-16 23:21:00 [RSPPProject] error: uncaughtException: username is not defined
+ReferenceError: username is not defined
+    at positionReview (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:20:27)
+    at positionRequest (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:51:24)
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:138:31
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+2023-09-16 23:21:20 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:21:20 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:21:20 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:21:20 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:21:20 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:21:20 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:21:20 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:22:27 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:22:27 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:22:27 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:22:27 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:22:27 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:22:27 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:22:27 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:23:03 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:23:03 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:23:03 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:23:03 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:23:03 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:23:03 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:23:03 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:24:06 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:24:06 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:24:06 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:24:06 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:24:06 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:24:06 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:24:06 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:25:06 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:25:06 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:25:06 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:25:06 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:25:06 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:25:06 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:25:06 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:26:39 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:26:39 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:26:39 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:26:39 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:26:39 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:26:39 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:26:39 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null,
+notNull Violation: positionrequest.current cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:29:40 [RSPPProject] error: uncaughtException: idUser is not defined
+ReferenceError: idUser is not defined
+    at C:\Users\homehome\Desktop\projects\rsppproject\index.js:61:17
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:65:3)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+2023-09-16 23:29:40 [RSPPProject] error: uncaughtException: idUser is not defined
+ReferenceError: idUser is not defined
+    at C:\Users\homehome\Desktop\projects\rsppproject\index.js:61:17
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:65:3)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+2023-09-16 23:29:40 [RSPPProject] error: uncaughtException: idUser is not defined
+ReferenceError: idUser is not defined
+    at C:\Users\homehome\Desktop\projects\rsppproject\index.js:61:17
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:65:3)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+2023-09-16 23:29:40 [RSPPProject] error: uncaughtException: idUser is not defined
+ReferenceError: idUser is not defined
+    at C:\Users\homehome\Desktop\projects\rsppproject\index.js:61:17
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:65:3)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+2023-09-16 23:29:40 [RSPPProject] error: uncaughtException: idUser is not defined
+ReferenceError: idUser is not defined
+    at C:\Users\homehome\Desktop\projects\rsppproject\index.js:61:17
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:65:3)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+2023-09-16 23:29:40 [RSPPProject] error: uncaughtException: idUser is not defined
+ReferenceError: idUser is not defined
+    at C:\Users\homehome\Desktop\projects\rsppproject\index.js:61:17
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:65:3)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+2023-09-16 23:29:40 [RSPPProject] error: uncaughtException: idUser is not defined
+ReferenceError: idUser is not defined
+    at C:\Users\homehome\Desktop\projects\rsppproject\index.js:61:17
+    at Object.<anonymous> (C:\Users\homehome\Desktop\projects\rsppproject\index.js:65:3)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+2023-09-16 23:30:42 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:30:42 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:30:42 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:30:42 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:30:42 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:30:42 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:30:42 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:31:15 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:31:15 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:31:15 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:31:15 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:31:15 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:31:15 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:31:15 [RSPPProject] error: uncaughtException: notNull Violation: positionrequest.id cannot be null
+SequelizeValidationError: notNull Violation: positionrequest.id cannot be null
+    at InstanceValidator._validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:2426:7)
+    at async positionrequest.create (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\sequelize\lib\model.js:1362:12)
+2023-09-16 23:36:17 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:148:52
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:365:14)
+2023-09-16 23:36:17 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:148:52
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:365:14)
+2023-09-16 23:36:17 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:148:52
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:365:14)
+2023-09-16 23:36:17 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:148:52
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:365:14)
+2023-09-16 23:36:17 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:148:52
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:365:14)
+2023-09-16 23:36:17 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:148:52
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:365:14)
+2023-09-16 23:36:17 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:148:52
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\index.js:365:14)
+2023-09-16 23:38:29 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at userExists (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:16:26)
+    at positionAlter (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:81:16)
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:161:27
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+2023-09-16 23:38:29 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at userExists (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:16:26)
+    at positionAlter (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:81:16)
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:161:27
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+2023-09-16 23:38:29 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at userExists (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:16:26)
+    at positionAlter (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:81:16)
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:161:27
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+2023-09-16 23:38:29 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at userExists (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:16:26)
+    at positionAlter (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:81:16)
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:161:27
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+2023-09-16 23:38:29 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at userExists (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:16:26)
+    at positionAlter (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:81:16)
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:161:27
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+2023-09-16 23:38:29 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at userExists (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:16:26)
+    at positionAlter (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:81:16)
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:161:27
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+2023-09-16 23:38:29 [RSPPProject] error: uncaughtException: Cannot read properties of undefined (reading 'tables')
+TypeError: Cannot read properties of undefined (reading 'tables')
+    at userExists (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:16:26)
+    at positionAlter (C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:81:16)
+    at C:\Users\homehome\Desktop\projects\rsppproject\routers\position.js:161:27
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at csrf (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\csurf\index.js:117:5)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\homehome\Desktop\projects\rsppproject\node_modules\express\lib\router\layer.js:95:5)

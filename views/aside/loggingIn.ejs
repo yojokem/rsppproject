@@ -1,0 +1,8 @@
+<div class="row">
+    <% if(validated) { %>
+        <div class="col-sm-6">로그인 중</div>
+        <div class="col-sm-9">[ <a href="/user" class="link-body-emphasis link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-25-hover "><b><%= user.name %></b></a> ]</div>
+    <% } else { %>
+        <div class="col-sm-9">[ <a href="/user" class="link-body-emphasis link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-25-hover "><b>누구..?</b></a> ]</div>
+    <% } %>
+</div>

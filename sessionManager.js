@@ -10,6 +10,7 @@ const { regFailCauses, positions, lang } = require("./config/config");
 
 async function validate(user, seqMan) {
     return (await seqMan.tables.user.findOne({
+        attributes: ['id'],
         where: {
             username: user['username'],
             password: user['password'],
@@ -18,6 +19,15 @@ async function validate(user, seqMan) {
             }
         }
     })) != null;
+}
+
+async function update(id, seqMan) {
+    return (await seqMan.tables.user.findOne({
+        attributes: ['name', 'position'],
+        where: {
+            id: id
+        }
+    }));
 }
 
 async function checkUsernameAvailable(username, seqMan) {
@@ -75,6 +85,11 @@ module.exports = function (seqMan) {
                 : {username: "", password: ""}; //'user' is one's full credential
             
                 res.locals.validated = await validate(res.locals.user, seqMan);
+                if(res.locals.validated) {
+                    let updated = await update(res.locals.user.id, seqMan);
+                    res.locals.user['name'] = updated.name;
+                    res.locals.user['position'] = updated.position;
+                }
             }
 
             next();

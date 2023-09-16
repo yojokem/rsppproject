@@ -14,6 +14,7 @@ module.exports = {
     '$L3': "initialized.",
     '$$L1': "Session Store ready ✔",
     '$$L2': "Session Manager ready ✔",
+    '$$L3': "Position Manager ready ✔",
     regFail: {
         /** System */
         0: "System Error. Please ask it to the administator.",

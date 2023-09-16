@@ -9,6 +9,7 @@ const app = express();
 const {PORT, cookieSign, stylingEmojis, lang} = require("./config/config");
 const eSession = require("./eSession");
 const sessionManager0 = require("./sessionManager");
+const positionManager0 = require("./positionManager");
 
 logger.info(lang('$L1'));
 
@@ -20,6 +21,7 @@ app.set('trust proxy', true);
 
 const seqMan = require("./sequelManager");
 const sessionManager = sessionManager0(seqMan);
+const positionManager = positionManager0(seqMan);
 
 // [1] Middlewares and Configuration
 
@@ -30,6 +32,7 @@ app.use(eSession);
 app.use(sessionManager.userCheck);
 app.use(sessionManager.userSessionCheck);
 app.use(sessionManager.imports);
+//////////////////////////////////////////////////////////////////////app.use(positionManager.imports);
 app.use((req, res, next) => {res.locals.stylingEmojis = stylingEmojis; next();});
 app.use('/v/bootstrap', express.static(path.join(__dirname, "./node_modules/bootstrap/dist")));
 app.use('/v/jquery', express.static(path.join(__dirname, "./node_modules/jquery/dist")));
