@@ -47,22 +47,19 @@
                 $.ajax({
                     url: "/positions",
                     method: "GET"
-                }).then(json => {
-                    if(json) {
-                        if(json.data) {
-                            let data = json.data;
-                            let output = "<option value='' disabled><%= lang('user')['index']['positionCheck'] %></option>";
-                            for(var i in Object.keys(data)) {
-                                let key = Object.keys(data)[i];
-                                let value = Object.keys(data)[i];
-                                
-                                let k = `
-                                    <option value="${key}" ${check(value) ? "selected" : ""}>${value}</option>
-                                `;
-                                output += k;
-                            }
-                            $("#positions").html(output);
+                }).then(data => {
+                    if(data) {
+                        let output = "<option value='' disabled><%= lang('user')['index']['positionCheck'] %></option>";
+                        for(var i in Object.keys(data)) {
+                            let key = Object.keys(data)[i];
+                            let value = data[key];
+                            
+                            let k = `
+                                <option value="${key}" ${check(value) ? "selected" : ""}>${value}</option>
+                            `;
+                            output += k;
                         }
+                        $("#positions").html(output);
                     }
                 }).fail(() => {
                     console.log("Could not load positions list!");

@@ -70,7 +70,7 @@ logger.info(lang("$$L2"));
 module.exports = function (seqMan) {
     return {
         userSessionCheck: async function (req, res, next) { // 로그인 세션 확인
-            if(!req.originalUrl.startsWith("/v")) {
+            if(!req.originalUrl.startsWith("/v") || !req.originalUrl == "/favicon.ico") {
                 res.locals.user = req.session.user != null ? req.session.user
                 : {username: "", password: ""}; //'user' is one's full credential
             

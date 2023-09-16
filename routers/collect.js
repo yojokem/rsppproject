@@ -14,13 +14,13 @@ function OrdinaryContainer() {
 module.exports = function (seqMan) {
 
     router.get("/", csrfProtection, (req, res) => {
-        if(res.locals.validated) {
+        if(res.locals.user) {
             res.render("user/index");
         } else csrfRenderer(res, "user/login", req.csrfToken());
     });
     
     router.get("/register", csrfProtection, (req, res) => {
-        if(res.locals.validated) {
+        if(res.locals.user) {
             res.render("user/index");
         } else csrfRenderer(res, "user/register", req.csrfToken());
     });
