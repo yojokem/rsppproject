@@ -133,58 +133,65 @@
                 <header><h2 id="pageTitle"><%= lang('pageTitles')['user'] %></h2></header>
                 <article>
                     <div class="container-md">
-                        <section>
-                            <div id="name" class="row">
-                                <div class="col-sm-8"><span style="font-family: 'BKKGothic Bold'; font-size: 1.4em;"><%= user.name %></span> <%= lang("user")['index']['sama'] %></div>
-                                <div class="col-sm-3"><input type="button" class="btn btn-sm btn-secondary" onclick="location.href = '/user/logout'" value="<%= lang('links')['logout'] %>" /></div>
-                            </div>
-                            <hr>
-                            <div id="username">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="username0"><%= stylingEmojis.USERNAME %></span>
-                                    <input type="text" id="username" name="username" readonly class="form-control" placeholder="<%= lang('user')['login']['placeholder_username'] %>" aria-label="<%= lang('user')['login']['placeholder_username'] %>" value="<%= user.username %>" aria-describedby="username0" />
+                        <div id="outer" style="display: flex">
+                            <section id="s1">
+                                <div id="inner">
+                                    <div id="name" class="row">
+                                        <div class="col-sm-7"><span style="font-family: 'BKKGothic Bold'; font-size: 1.4em;"><%= user.name %></span> <%= lang("user")['index']['sama'] %></div>
+                                        <div class="col-sm-3"><input type="button" class="btn btn-sm btn-secondary" onclick="location.href = '/user/logout'" value="<%= lang('links')['logout'] %>" /></div>
+                                    </div>
+                                    <hr>
+                                    <div id="username">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="username0"><%= stylingEmojis.USERNAME %></span>
+                                            <input type="text" id="username" name="username" readonly class="form-control" placeholder="<%= lang('user')['login']['placeholder_username'] %>" aria-label="<%= lang('user')['login']['placeholder_username'] %>" value="<%= user.username %>" aria-describedby="username0" />
+                                        </div>
+                                    </div>
+                                    <div id="password">
+                                        <form name="passwordAlterForm" id="passwordAlterForm" action="/user/password/<%= user.id %>" method="POST">
+                                            <input type="hidden" name="_csrf", value="<%= _csrf %>" />
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="password0"><%= stylingEmojis.PASSWORD %></span>
+                                                <input type="password" id="password_cur" name="password" class="form-control" placeholder="<%= lang('user')['index']['curPW'] %>" aria-label="<%= lang('user')['index']['curPW'] %>" aria-describedby="password0" />
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="password2"><%= stylingEmojis.PASSWORD %></span>
+                                                <input type="password" id="password_alt" name="password_alt" class="form-control" placeholder="<%= lang('user')['index']['newPW'] %>" aria-label="<%= lang('user')['index']['newPW'] %>" aria-describedby="password2" />
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="password3"><%= stylingEmojis.PASSWORD %></span>
+                                                <input type="password" id="password_alt_re" name="password_alt_re" class="form-control" placeholder="<%= lang('user')['index']['newPW-c'] %>" aria-label="<%= lang('user')['index']['newPW-c'] %>" aria-describedby="password3" />
+                                            </div>
+                                            <input class="btn btn-info" id="submitBtn1" type="button" value="<%= lang('user')['index']['pwchange'] %>" />
+                                        </form>
+                                    </div>
+                                    <div id="code">
+                                        <form name="codeCheckForm" id="codeCheckForm">
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="code0"><%= stylingEmojis.CODE %></span>
+                                                <input type="number" id="code" name="code" class="form-control" placeholder="<%= lang('user')['index']['code'] %>" aria-label="<%= lang('user')['index']['code'] %>" aria-describedby="code0" />
+                                            </div>
+                                            <input class="btn btn-info" id="submitBtn2" type="button" value="<%= lang('user')['index']['code_confirm'] %>" />
+                                        </form>
+                                    </div>
+                                    <p style="font-size: 0.2em;"></p>
+                                    <div id="position">
+                                        <form name="positionRequestForm" id="positionRequestForm" action="/positions/request" method="POST">
+                                            <input type="hidden" name="_csrf", value="<%= _csrf %>" />
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="position0"><%= stylingEmojis.POSITION %></span>
+                                                <select name="position" id="positions" aria-label="직책" aria-describedby="position0" class="form-control">
+                                                </select>
+                                            </div>
+                                            <input class="btn btn-light" id="submitBtn3" type="button" value="직책 변경 요청" />
+                                        </form>
+                                    </div>
                                 </div>
-                            </div>
-                            <div id="password">
-                                <form name="passwordAlterForm" id="passwordAlterForm" action="/user/password/<%= user.id %>" method="POST">
-                                    <input type="hidden" name="_csrf", value="<%= _csrf %>" />
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" id="password0"><%= stylingEmojis.PASSWORD %></span>
-                                        <input type="password" id="password_cur" name="password" class="form-control" placeholder="<%= lang('user')['index']['curPW'] %>" aria-label="<%= lang('user')['index']['curPW'] %>" aria-describedby="password0" />
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" id="password2"><%= stylingEmojis.PASSWORD %></span>
-                                        <input type="password" id="password_alt" name="password_alt" class="form-control" placeholder="<%= lang('user')['index']['newPW'] %>" aria-label="<%= lang('user')['index']['newPW'] %>" aria-describedby="password2" />
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" id="password3"><%= stylingEmojis.PASSWORD %></span>
-                                        <input type="password" id="password_alt_re" name="password_alt_re" class="form-control" placeholder="<%= lang('user')['index']['newPW-c'] %>" aria-label="<%= lang('user')['index']['newPW-c'] %>" aria-describedby="password3" />
-                                    </div>
-                                    <input class="btn btn-info" id="submitBtn1" type="button" value="<%= lang('user')['index']['pwchange'] %>" />
-                                </form>
-                            </div>
-                            <div id="code">
-                                <form name="codeCheckForm" id="codeCheckForm">
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" id="code0"><%= stylingEmojis.CODE %></span>
-                                        <input type="number" id="code" name="code" class="form-control" placeholder="<%= lang('user')['index']['code'] %>" aria-label="<%= lang('user')['index']['code'] %>" aria-describedby="code0" />
-                                    </div>
-                                    <input class="btn btn-info" id="submitBtn2" type="button" value="<%= lang('user')['index']['code_confirm'] %>" />
-                                </form>
-                            </div>
-                            <p style="font-size: 0.2em;"></p>
-                            <div id="position">
-                                <form name="positionRequestForm" id="positionRequestForm" action="/positions/request" method="POST">
-                                    <input type="hidden" name="_csrf", value="<%= _csrf %>" />
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" id="position0"><%= stylingEmojis.POSITION %></span>
-                                        <select name="position" id="positions" aria-label="직책" aria-describedby="position0" class="form-control">
-                                        </select>
-                                    </div>
-                                    <input class="btn btn-light" id="submitBtn3" type="button" value="직책 변경 요청" />
-                                </form>
-                            </div>
-                        </section>
+                            </section>
+                            <section id="s2">
+                                dwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadawdwadaw
+                            </section>
+                        </div>
                     </div>
                     <div>&nbsp;</div>
                 </article>

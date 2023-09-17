@@ -76,6 +76,18 @@ async function userExists(idUser, seqMan) {
     })) != null;
 }
 
+async function equal(level, idUser, seqMan) {
+
+}
+
+async function over(level, idUser, seqMan) {
+    
+}
+
+async function less(level, idUser, seqMan) {
+    
+}
+
 async function positionExists(called, seqMan) {
     return (await seqMan.tables.positions.findOne({
         where: {

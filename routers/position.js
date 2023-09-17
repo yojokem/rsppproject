@@ -55,7 +55,7 @@ async function positionRequest(idUser, into, check, seqMan) {
     into = into.trim();
 
     // 요청한 직책이 부적절한 경우: false
-    if(!check(into)) {
+    if(!(await check(into))) {
         logger.error("A requested position does not exist.");
         return false;
     }
@@ -84,7 +84,7 @@ async function positionAlter(idUser, into, callerID, check, seqMan) {
     into = into.trim();
 
     // 요청한 직책이 부적절한 경우: false
-    if(!check(into)) {
+    if(!(await check(into))) {
         logger.error("A requested position does not exist. [ALTER]");
         return false;
     }

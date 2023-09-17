@@ -30,6 +30,8 @@ function initModels(sequelize) {
 
   user.hasMany(positionrequest, { foreignKey: 'userID', targetKey: 'id'});
 
+  positions.hasMany(user, { foreignKey: 'position', targetKey: 'called'});
+
   user.hasMany(ordinarycol, {
     foreignKey: 'username',
     targetKey: 'worker',

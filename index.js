@@ -50,6 +50,10 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
+app.get("/favicon.ico", (req, res) => {
+    res.sendFile(res.locals.viewDir("../favicon.ico"));
+});
+
 app.get("/informative", (req, res) => {
     res.render("informative");
 });
@@ -62,6 +66,9 @@ const router_User = require("./routers/user")(seqMan);
 app.use("/user", router_User);
 const router_Position = require("./routers/position")(seqMan);
 app.use("/positions", router_Position);
+
+const router_Post = require("./routers/post")(seqMan);
+app.use("/post", router_Post);
 
 const router_Collect = require("./routers/collect")(seqMan);
 app.use("/collect", router_Collect);

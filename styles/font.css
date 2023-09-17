@@ -112,3 +112,71 @@ aside * {
 button, .btn, input {
     font-family: 'HGSWooju Regular'
 }
+
+/**
+**/
+
+.ql-font span[data-label="고운바탕"]::before {
+    font-family: "GowunBatang Regular";
+}
+
+.ql-font span[data-label="바른바탕"]::before {
+    font-family: "HGSBatang Regular";
+}
+
+.ql-font span[data-label="우주"]::before {
+    font-family: "HGSWooju Regular";
+}
+
+.ql-font span[data-label="인천교육자람"]::before {
+    font-family: "Incheon Edu Grow";
+}
+
+.ql-font span[data-label="바른돋움"]::before {
+    font-family: "HGSDotum Regular";
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="고운바탕"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="고운바탕"]::before {
+  content: "고운바탕";
+  font-family: "GowunBatang Regular";
+}
+.ql-font-고운바탕 {
+  font-family: "GowunBatang Regular";
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="바른바탕"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="바른바탕"]::before {
+  content: "바른바탕";
+  font-family: "HGSBatang Regular";
+}
+.ql-font-바른바탕 {
+  font-family: "HGSBatang Regular";
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="우주"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="우주"]::before {
+  content: "우주";
+  font-family: "HGSWooju Regular";
+}
+.ql-font-우주 {
+  font-family: "HGSWooju Regular";
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="인천교육자람"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="인천교육자람"]::before {
+  content: "인천교육자람";
+  font-family: "Incheon Edu Grow";
+}
+.ql-font-인천교육자람 {
+  font-family: "Incheon Edu Grow";
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="바른돋움"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="바른돋움"]::before {
+  content: "바른돋움";
+  font-family: "HGSDotum Regular";
+}
+.ql-font-바른돋움 {
+  font-family: "HGSDotum Regular";
+}

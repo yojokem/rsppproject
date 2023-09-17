@@ -47,3 +47,44 @@
 2023-09-17 12:18:51 [RSPPProject] info: 세션 저장소 준비 ✔
 2023-09-17 12:18:52 [RSPPProject] info: 세션 매니저 준비 ✔
 2023-09-17 12:18:52 [RSPPProject] info: 직책 매니저 준비 ✔
+2023-09-17 12:19:11 [RSPPProject] info: 모듈 로딩 완료. 초기화 개시.
+2023-09-17 12:19:11 [RSPPProject] info: 초기화되었습니다.
+2023-09-17 12:19:11 [RSPPProject] info: 시작되었습니다!
+2023-09-17 12:19:10 [RSPPProject] info: 세션 저장소 준비 ✔
+2023-09-17 12:19:11 [RSPPProject] info: 세션 매니저 준비 ✔
+2023-09-17 12:19:11 [RSPPProject] info: 직책 매니저 준비 ✔
+2023-09-17 12:21:01 [RSPPProject] info: By the authority of user {genaff}[yojokem(1)] 김민성, the request(s) of alterations of the position of the user {genaff}[yojokem(1)] 김민성 from 'genaff' to 'executor' has been processed.
+2023-09-17 12:21:17 [RSPPProject] info: By the authority of user {executor}[yojokem(1)] 김민성, the position has been altered of the user {executor}[yojokem(1)] 김민성 from 'executor' to 'genaff'.
+2023-09-17 12:21:25 [RSPPProject] info: By the authority of user {genaff}[yojokem(1)] 김민성, the position has been altered of the user {party}[test(2)] 테스트1 from 'party' to 'dwa'.
+2023-09-17 12:22:26 [RSPPProject] info: 모듈 로딩 완료. 초기화 개시.
+2023-09-17 12:22:26 [RSPPProject] info: 초기화되었습니다.
+2023-09-17 12:22:26 [RSPPProject] info: 시작되었습니다!
+2023-09-17 12:22:25 [RSPPProject] info: 세션 저장소 준비 ✔
+2023-09-17 12:22:26 [RSPPProject] info: 직책 매니저 준비 ✔
+2023-09-17 12:22:26 [RSPPProject] info: 세션 매니저 준비 ✔
+2023-09-17 12:22:34 [RSPPProject] info: By the authority of user {genaff}[yojokem(1)] 김민성, the position has been altered of the user {dwa}[test(2)] 테스트1 from 'dwa' to 'party'.
+2023-09-17 12:22:39 [RSPPProject] error: A requested position does not exist. [ALTER]
+2023-09-17 12:23:04 [RSPPProject] info: False Login has occurred. [::1]
+2023-09-17 12:23:10 [RSPPProject] info: Logged in. (test2)
+2023-09-17 12:24:53 [RSPPProject] error: A requested position does not exist.
+2023-09-17 12:26:04 [RSPPProject] info: Logged in. (yojokem)
+2023-09-17 12:51:03 [RSPPProject] info: 모듈 로딩 완료. 초기화 개시.
+2023-09-17 12:51:04 [RSPPProject] info: 초기화되었습니다.
+2023-09-17 12:51:04 [RSPPProject] info: 시작되었습니다!
+2023-09-17 12:51:03 [RSPPProject] info: 세션 저장소 준비 ✔
+2023-09-17 12:51:03 [RSPPProject] info: 세션 매니저 준비 ✔
+2023-09-17 12:51:03 [RSPPProject] info: 직책 매니저 준비 ✔
+2023-09-17 12:53:21 [RSPPProject] info: 모듈 로딩 완료. 초기화 개시.
+2023-09-17 12:53:21 [RSPPProject] info: 초기화되었습니다.
+2023-09-17 12:53:21 [RSPPProject] info: 시작되었습니다!
+2023-09-17 12:53:20 [RSPPProject] info: 세션 저장소 준비 ✔
+2023-09-17 12:53:21 [RSPPProject] info: 세션 매니저 준비 ✔
+2023-09-17 12:53:21 [RSPPProject] info: 직책 매니저 준비 ✔
+2023-09-17 12:53:33 [RSPPProject] info: Logged in. (yojokem)
+2023-09-17 12:58:41 [RSPPProject] info: Logged in. (yojokem)
+2023-09-17 13:45:05 [RSPPProject] info: 모듈 로딩 완료. 초기화 개시.
+2023-09-17 13:45:05 [RSPPProject] info: 초기화되었습니다.
+2023-09-17 13:45:05 [RSPPProject] info: 시작되었습니다!
+2023-09-17 13:45:04 [RSPPProject] info: 세션 저장소 준비 ✔
+2023-09-17 13:45:05 [RSPPProject] info: 세션 매니저 준비 ✔
+2023-09-17 13:45:05 [RSPPProject] info: 직책 매니저 준비 ✔
