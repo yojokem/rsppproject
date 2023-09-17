@@ -32,6 +32,7 @@ app.use(eSession);
 app.use(sessionManager.userCheck);
 app.use(sessionManager.userSessionCheck);
 app.use(sessionManager.imports);
+app.use(positionManager.imports);
 //////////////////////////////////////////////////////////////////////app.use(positionManager.imports);
 app.use((req, res, next) => {res.locals.stylingEmojis = stylingEmojis; next();});
 app.use('/v/bootstrap', express.static(path.join(__dirname, "./node_modules/bootstrap/dist")));

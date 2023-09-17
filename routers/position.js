@@ -4,7 +4,8 @@ const { Op } = require("sequelize");
 const express = require("express");
 const router = express.Router();
 const csrfProtection = require("csurf")();
-const { positions, lang, mysql_real_escape_string, alertRedirect } = require("../config/config");
+const { lang, mysql_real_escape_string, alertRedirect } = require("../config/config");
+const lodash = require("lodash.clonedeep");
 
 const positionsLang = lang("positions");
 
@@ -48,13 +49,13 @@ async function positionLookup(id, seqMan) {
     return user;
 }
 
-async function positionRequest(idUser, into, seqMan) {
+async function positionRequest(idUser, into, check, seqMan) {
     if(!(await userExists(idUser, seqMan))) return false;
 
     into = into.trim();
 
     // 요청한 직책이 부적절한 경우: false
-    if(!positions.includes(into)) {
+    if(!check(into)) {
         logger.error("A requested position does not exist.");
         return false;
     }
@@ -77,13 +78,13 @@ async function positionRequest(idUser, into, seqMan) {
     }
 }
 
-async function positionAlter(idUser, into, callerID, seqMan) {
+async function positionAlter(idUser, into, callerID, check, seqMan) {
     if(!(await userExists(idUser, seqMan)) || !(await userExists(callerID, seqMan))) return false;
 
     into = into.trim();
 
     // 요청한 직책이 부적절한 경우: false
-    if(!positions.includes(into)) {
+    if(!check(into)) {
         logger.error("A requested position does not exist. [ALTER]");
         return false;
     }
@@ -137,8 +138,19 @@ async function positionAlter(idUser, into, callerID, seqMan) {
 }
 
 module.exports = function (seqMan) {
-    router.get("/", (req, res) => {
-        res.send(positionsLang);
+    const positionManager = require("../positionManager")(seqMan);
+
+    async function checkPositionsValid (d) {
+        return (await positionManager.positionsList()).includes(d);
+    }
+
+    router.get("/", async (req, res) => {
+        let k = await (async () => lodash(positionsLang))();
+        /* 일반 사용자 접근 불가 */
+        delete k.abandoned;
+        delete k.expelled;
+        delete k.cancelled;
+        res.send(k);
     });
 
     router.post("/request", csrfProtection, async (req, res) => {
@@ -147,7 +159,7 @@ module.exports = function (seqMan) {
         if(res.locals.validated) {
             if(p.includes("_csrf") && req.method.toLowerCase() == "post") {
                 let positionInto = typeof req.body.position == "string" ? mysql_real_escape_string(req.body.position) : "";
-                let p = await positionRequest(res.locals.user.id, positionInto, seqMan);
+                let p = await positionRequest(res.locals.user.id, positionInto, checkPositionsValid, seqMan);
                 alertRedirect(res, p ?
                     "성공적으로 직책 변경이 요청되었습니다.\n관리자의 승인 시까지 기다려 주십시오."
                     : "직책 변경에 실패하였습니다.\n잘못된 요청이거나, 처리되지 않은 동일한 내용의 요청이 존재할 수 있습니다.", "/user");
@@ -158,7 +170,7 @@ module.exports = function (seqMan) {
     router.get("/alter/:id/:pos", csrfProtection, async (req, res) => {
         if(res.locals.validated) {
             let positionInto = typeof req.params.pos == "string" ? mysql_real_escape_string(req.params.pos) : "";
-            let p = await positionAlter(req.params.id, positionInto, res.locals.user.id, seqMan);
+            let p = await positionAlter(req.params.id, positionInto, res.locals.user.id, checkPositionsValid, seqMan);
             alertRedirect(res, p ?
                 `사용자 ${req.params.id} 번에 대하여 성공적으로 직책 변경 처리 하였습니다.`
                 : "직책 변경에 실패하였습니다. 시스템 오류를 확인하시기 바랍니다.", "/");

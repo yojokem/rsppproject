@@ -6,7 +6,7 @@
 const logger = require("./config/winston")().logger;
 const path = require("path");
 const { Op } = require("sequelize");
-const { regFailCauses, positions, lang } = require("./config/config");
+const { regFailCauses, lang, ruleOut } = require("./config/config");
 
 async function validate(user, seqMan) {
     return (await seqMan.tables.user.findOne({
@@ -80,7 +80,7 @@ logger.info(lang("$$L2"));
 module.exports = function (seqMan) {
     return {
         userSessionCheck: async function (req, res, next) { // 로그인 세션 확인
-            if(!req.originalUrl.startsWith("/v") || !req.originalUrl == "/favicon.ico") {
+            if(!ruleOut(req)) {
                 res.locals.user = req.session.user != null ? req.session.user
                 : {username: "", password: ""}; //'user' is one's full credential
             
@@ -95,6 +95,11 @@ module.exports = function (seqMan) {
             next();
         },
         userCheck: async function (req, res, next) {
+            if(ruleOut(req)) {
+                next();
+                return;
+            }
+
             let p = Object.keys(req.body);
 
             if(p.includes("_csrf") && req.method.toLowerCase() == "post") {
@@ -246,9 +251,13 @@ module.exports = function (seqMan) {
             next();
         },
         imports: function (req, res, next) { // res.locals에 넘겨줄 함수, 마지막에 호출된다.
+            if(ruleOut(req)) {
+                next();
+                return;
+            }
+
             res.locals.$DIR_VIEW = path.join(__dirname, "./views/");
             res.locals.viewDir = p => path.join(res.locals.$DIR_VIEW, p);
-            res.locals.positions = positions;
             res.locals.lang = lang;
 
             next();

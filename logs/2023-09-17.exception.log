@@ -1,0 +1,56 @@
+2023-09-17 12:09:43 [RSPPProject] error: uncaughtException: p.append is not a function
+TypeError: p.append is not a function
+    at C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:38
+    at Array.forEach (<anonymous>)
+    at positionsList (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:23)
+    at imports (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:102:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-17 12:09:43 [RSPPProject] error: uncaughtException: p.append is not a function
+TypeError: p.append is not a function
+    at C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:38
+    at Array.forEach (<anonymous>)
+    at positionsList (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:23)
+    at imports (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:102:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-17 12:09:43 [RSPPProject] error: uncaughtException: p.append is not a function
+TypeError: p.append is not a function
+    at C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:38
+    at Array.forEach (<anonymous>)
+    at positionsList (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:23)
+    at imports (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:102:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-17 12:09:43 [RSPPProject] error: uncaughtException: p.append is not a function
+TypeError: p.append is not a function
+    at C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:38
+    at Array.forEach (<anonymous>)
+    at positionsList (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:23)
+    at imports (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:102:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-17 12:09:43 [RSPPProject] error: uncaughtException: p.append is not a function
+TypeError: p.append is not a function
+    at C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:38
+    at Array.forEach (<anonymous>)
+    at positionsList (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:23)
+    at imports (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:102:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-17 12:09:43 [RSPPProject] error: uncaughtException: p.append is not a function
+TypeError: p.append is not a function
+    at C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:38
+    at Array.forEach (<anonymous>)
+    at positionsList (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:23)
+    at imports (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:102:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-17 12:09:43 [RSPPProject] error: uncaughtException: p.append is not a function
+TypeError: p.append is not a function
+    at C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:38
+    at Array.forEach (<anonymous>)
+    at positionsList (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:23)
+    at imports (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:102:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-09-17 12:09:43 [RSPPProject] error: uncaughtException: p.append is not a function
+TypeError: p.append is not a function
+    at C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:38
+    at Array.forEach (<anonymous>)
+    at positionsList (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:93:23)
+    at imports (C:\Users\homehome\Desktop\projects\rsppproject\positionManager.js:102:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

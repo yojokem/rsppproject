@@ -131,6 +131,7 @@ module.exports = {
         typeCheck: typeCheck,
         typeList: typeList
     },
-    positions: ['party', 'genaff', 'agent', 'executor', 'chairman', 'auditor', 'abandoned', 'expelled', 'cancelled', 'none'],
-    lang: lang
+//    positions: ['party', 'genaff', 'agent', 'executor', 'chairman', 'auditor', 'abandoned', 'expelled', 'cancelled', 'none'],
+    lang: lang,
+    ruleOut: req => req.originalUrl.startsWith("/v") || req.originalUrl == "favicon.ico"
 }
