@@ -7,6 +7,10 @@ var _refundcol = require("./refundcol");
 var _user = require("./user");
 var _positionrequest = require("./positionrequest");
 var _positions = require("./positions");
+var _board = require("./board");
+var _execution = require("./execution");
+var _post = require("./post");
+var _media = require("./media");
 
 function initModels(sequelize) {
   var collect = _collect(sequelize, DataTypes);
@@ -17,6 +21,10 @@ function initModels(sequelize) {
   var user = _user(sequelize, DataTypes);
   var positionrequest = _positionrequest(sequelize, DataTypes);
   var positions = _positions(sequelize, DataTypes);
+  var board = _board(sequelize, DataTypes);
+  var post = _post(sequelize, DataTypes);
+  var execution = _execution(sequelize, DataTypes);
+  var media = _media(sequelize, DataTypes);
 
   ordinarycol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
   proxycol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
@@ -101,6 +109,10 @@ function initModels(sequelize) {
   user.sync();
   positionrequest.sync();
   positions.sync();
+  board.sync();
+  post.sync();
+  execution.sync();
+  media.sync();
 
   return {
     collect,
@@ -110,7 +122,11 @@ function initModels(sequelize) {
     refundcol,
     user,
     positionrequest,
-    positions
+    positions,
+    board,
+    post,
+    execution,
+    media
   };
 }
 

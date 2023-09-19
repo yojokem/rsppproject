@@ -9,6 +9,10 @@ module.exports = function (seqMan) {
     router.get("/", csrfProtection, (req, res) => {
         csrfRenderer(res, "post/index", req.csrfToken());
     });
+
+    router.get("/board/:name", csrfProtection, (req, res) => {
+        csrfRenderer(res, "post/index", req.csrfToken());
+    });
     
     router.get("/write", csrfProtection, (req, res) => {
         csrfRenderer(res, "post/write", req.csrfToken());

@@ -27,6 +27,10 @@ module.exports = function (seqMan) {
         }));
     }
 
+    async function callEntire() {
+        return (await fixedSeqMan.tables.collect.findAll());
+    }
+
     const switchMap = {
         "ordinary": 0,
         0: "ordinary",
