@@ -59,6 +59,16 @@
             "date": 1695130291160,
             "name": "C:\\Users\\homehome\\Desktop\\projects\\rsppproject\\logs\\error\\2023-09-19.error.log",
             "hash": "c938622b8870e298558e877c4bfdf9c723ab285c191bc6c7e1727546a2e033db"
+        },
+        {
+            "date": 1701570523853,
+            "name": "C:\\Users\\homehome\\Desktop\\projects\\rsppproject\\logs\\error\\2023-12-03.error.log",
+            "hash": "39aec2a557f92fccbe7519f664cc8e7e43785386aaa1293a1904dfaab61dc633"
+        },
+        {
+            "date": 1701617088389,
+            "name": "C:\\Users\\homehome\\Desktop\\projects\\rsppproject\\logs\\error\\2023-12-04.error.log",
+            "hash": "ecb9aebd40d5b444ceb045a2a77180e93f15aa3dc7727b373bae2a1b8564fd2e"
         }
     ],
     "hashType": "sha256"

@@ -38,6 +38,7 @@ app.use((req, res, next) => {res.locals.stylingEmojis = stylingEmojis; next();})
 app.use('/v/bootstrap', express.static(path.join(__dirname, "./node_modules/bootstrap/dist")));
 app.use('/v/jquery', express.static(path.join(__dirname, "./node_modules/jquery/dist")));
 app.use('/v/style', express.static(path.join(__dirname, "./styles")));
+app.use('/v/scripts', express.static(path.join(__dirname, "./scripts")));
 app.use('/v/fonts', express.static(path.join(__dirname, "./fonts")))
 
 app.use(helmet.hidePoweredBy());

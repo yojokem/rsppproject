@@ -19,6 +19,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(5500),
       allowNull: false
     },
+    board: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
     registered: {
       type: DataTypes.DATE,
       allowNull: false,

@@ -10,7 +10,15 @@ module.exports = function (seqMan) {
         csrfRenderer(res, "post/index", req.csrfToken());
     });
 
+    router.get("/get.update", csrfProtection, (req, res) => {
+        csrfRenderer(res, "post/index", req.csrfToken());
+    });
+
     router.get("/board/:name", csrfProtection, (req, res) => {
+        csrfRenderer(res, "post/index", req.csrfToken());
+    });
+
+    router.get("/read/:id", csrfProtection, (req, res) => {
         csrfRenderer(res, "post/index", req.csrfToken());
     });
     

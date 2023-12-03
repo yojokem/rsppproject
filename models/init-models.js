@@ -1,30 +1,32 @@
 var DataTypes = require("sequelize").DataTypes;
+var _board = require("./board");
 var _collect = require("./collect");
+var _execution = require("./execution");
 var _login = require("./login");
+var _media = require("./media");
 var _ordinarycol = require("./ordinarycol");
-var _proxycol = require("./proxycol");
-var _refundcol = require("./refundcol");
-var _user = require("./user");
 var _positionrequest = require("./positionrequest");
 var _positions = require("./positions");
-var _board = require("./board");
-var _execution = require("./execution");
 var _post = require("./post");
-var _media = require("./media");
+var _proxycol = require("./proxycol");
+var _refundcol = require("./refundcol");
+var _sessions = require("./sessions");
+var _user = require("./user");
 
 function initModels(sequelize) {
+  var board = _board(sequelize, DataTypes);
   var collect = _collect(sequelize, DataTypes);
-  var login = _login(sequelize, DataTypes);   
+  var execution = _execution(sequelize, DataTypes);
+  var login = _login(sequelize, DataTypes);
+  var media = _media(sequelize, DataTypes);
   var ordinarycol = _ordinarycol(sequelize, DataTypes);
-  var proxycol = _proxycol(sequelize, DataTypes);
-  var refundcol = _refundcol(sequelize, DataTypes);
-  var user = _user(sequelize, DataTypes);
   var positionrequest = _positionrequest(sequelize, DataTypes);
   var positions = _positions(sequelize, DataTypes);
-  var board = _board(sequelize, DataTypes);
   var post = _post(sequelize, DataTypes);
-  var execution = _execution(sequelize, DataTypes);
-  var media = _media(sequelize, DataTypes);
+  var proxycol = _proxycol(sequelize, DataTypes);
+  var refundcol = _refundcol(sequelize, DataTypes);
+  var sessions = _sessions(sequelize, DataTypes);
+  var user = _user(sequelize, DataTypes);
 
   ordinarycol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
   proxycol.belongsTo(collect, { foreignKey: 'id', targetKey: 'passid' });
@@ -101,6 +103,11 @@ function initModels(sequelize) {
     });
   });
 
+  post.belongsTo(board, {
+    foreignKey: 'id',
+    targetKey: 'board'
+  })
+
   collect.sync();
   login.sync();
   ordinarycol.sync();
@@ -115,20 +122,21 @@ function initModels(sequelize) {
   media.sync();
 
   return {
+    board,
     collect,
+    execution,
     login,
+    media,
     ordinarycol,
-    proxycol,
-    refundcol,
-    user,
     positionrequest,
     positions,
-    board,
     post,
-    execution,
-    media
+    proxycol,
+    refundcol,
+    sessions,
+    user,
   };
 }
-
-
 module.exports = initModels;
+module.exports.initModels = initModels;
+module.exports.default = initModels;

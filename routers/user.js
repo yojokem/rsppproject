@@ -31,7 +31,7 @@ module.exports = function (seqMan) {
         req.session.user = req.session.user0;
     
         if(res.locals.validated || req.session.user) {
-            if(req.session.user != null && req.session.user.username != "" || req.session.user.password != "") delete req.session.user0;
+            if(req.session.user != null && req.session.user.username && req.session.user.password) delete req.session.user0;
         } else {
             alertRedirect(res, "로그인에 실패하였습니다.\n다시 로그인을 시도하거나, 새로 고침을 시도해 주세요.\n\n\t▷▶ 참고 : 연결 | 브라우저 환경(쿠키/세션) 등 ■", "/user");
             return;

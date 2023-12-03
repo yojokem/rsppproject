@@ -1,0 +1,148 @@
+<% if(!validated) {%>
+    <script type="text/javascript">
+        alert("<%= lang('user')['loginInvalid'] %>");
+        location.href = "/user";
+    </script>
+<% } %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= lang('pageTitles')['user'] %></title>
+        <%- include(viewDir('./_head')) %>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/sha256.js"></script>
+        <script type="text/javascript">
+            const positions = "<%= positions %>".split(",");
+
+            function mysql_real_escape_string(str) {
+                if (typeof str != "string") return str;
+
+                return str.replace(/[\0\x08\x09\x1a\n\r"'\\\%]/g, function (char) {
+                    switch (char) {
+                        case "\0":
+                            return "\\0";
+                        case "\x08":
+                            return "\\b";
+                        case "\x09":
+                            return "\\t";
+                        case "\x1a":
+                            return "\\z";
+                        case "\n":
+                            return "\\n";
+                        case "\r":
+                            return "\\r";
+                        case '"':
+                        case "'":
+                        case "\\":
+                        case "%":
+                            return "\\" + char; // prepends a backslash to backslash, percent,
+                        // and double/single quotes
+                    }
+                });
+            }
+
+            function check(d) {
+                return d == '<%= user.position %>';
+            }
+
+            $(document).ready(function() {
+                $.ajax({
+                    url: "/post/get.update",
+                    method: "GET"
+                }).then(data => {
+                    if(data) {
+                        let output = "<option value='' disabled><%= lang('user')['index']['positionCheck'] %></option>";
+                        for(var i in Object.keys(data)) {
+                            let key = Object.keys(data)[i];
+                            let value = data[key];
+                            
+                            let k = `
+                                <option value="${key}" ${check(key) ? "selected" : ""}>${value}</option>
+                            `;
+                            output += k;
+                        }
+                        $("#positions").html(output);
+                    }
+                }).fail(() => {
+                    console.log("Could not load positions list!");
+                });
+
+                function enterRespond(e) {
+                    if(e.which == 13) {
+                        $("#submitBtn1").click();
+                    }
+                }
+
+                $("#password_alt_re").keyup(enterRespond);
+
+                $("#submitBtn1").click(function() {
+                    if($("#password_cur").val().trim() == "" || $("#password_alt").val().trim() == "" || $("#password_alt_re").val().trim() == "") {
+                        alert("<%= lang('user')['index']['form1-cursor-blank'] %>");
+                    } else {
+                        let cur = CryptoJS.SHA256($("#password_cur").val()).toString();
+                        let alt = CryptoJS.SHA256($("#password_alt").val()).toString();
+                        let alt_re = CryptoJS.SHA256($("#password_alt_re").val()).toString();
+
+                        if($("#password_alt").val() == $("#password_alt_re").val()) {
+                            $("#password_cur").val(cur);
+                            $("#password_alt").val(alt);
+                            $("#password_alt_re").val(alt_re);
+                            $("#passwordAlterForm").submit();
+                        }
+                        else alert("<%= lang('user')['index']['newPW-nM'] %>");
+                    }
+                });
+
+                $("#submitBtn2").click(function() {
+                    $.ajax({
+                        url: "/code",
+                        method: "GET"
+                    }).then(json => {
+                        if(json) {
+                            if(json.data) {
+                                let data = json.data;
+                                let output = "<option value='' disabled><%= lang('user')['index']['positionCheck'] %></option>";
+                                for(var i in Object.keys(data)) {
+                                    let key = Object.keys(data)[i];
+                                    let value = Object.keys(data)[i];
+                                    
+                                    let k = `
+                                        <option value="${key}" ${check(value) ? "selected" : ""}>${value}</option>
+                                    `;
+                                    output += k;
+                                }
+                                $("#positions").html(output);
+                            }
+                        }
+                    }).fail(() => {
+                        console.log("Could not load positions list!");
+                    });
+                })
+
+                $("#submitBtn3").click(function () {
+                    if(positions.includes($("#positions").val())) $("#positionRequestForm").submit();
+                    else alert("적절한 직책만 요청할 수 있습니다!");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <%- include(viewDir('./_navbar')) %>
+            <div id="content" class="container-fluid">
+                <header><h2 id="pageTitle"><%= lang('pageTitles')['user'] %></h2></header>
+                <article>
+                    <div class="container-md">
+                        <div id="postList" class="row">
+
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                </article>
+                <%- include(viewDir("./aside/index")) %>
+            </div>
+        </div>
+        <%- include(viewDir('./.footer')) %>
+    </body>
+    <%- include(viewDir('./_bottom')) %>
+</html>
